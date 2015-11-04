@@ -1,0 +1,122 @@
+[
+    {
+        "title": "Twitter Navigator",
+        "description": "stuff with things at the place",
+        "contributions": "",
+        "category": "",
+        "link": "https://github.com/rivulet-zhang/Twitter-Navigator",
+        "dates": "April 2015 - current"
+    },
+    {
+        "title": "VAST Challenge 2015",
+        "description": "",
+        "contributions": "",
+        "category": "research",
+        "link": "http://vacommunity.org/VAST+Challenge+2015",
+        "dates": "June 2015 - July 2015"
+    },
+    {
+        "title": "Impromptune",
+        "description": "a Java application extending on the feature set of Zong! viewer, while also implementing a dynamic music generation based on the current loaded musical score. We took a static musicXML score viewer and added many features to it while using a Scrum software development methodology.",
+        "contributions": "",
+        "category": "research",
+        "link": "https://github.com/phill117/Impromptune",
+        "dates": "January 2015 - May 2015"
+    },
+    {
+        "title": "Social Media Analytics and Reporting Toolkit (SMART)",
+        "description": "",
+        "contributions": "",
+        "category": "",
+        "link": "https://www.cerias.purdue.edu/research/projects/home/detail/175/social_media_analytics_and_reporting_toolkit_smart",
+        "dates": "December 2014 - May 2015"
+    },
+    {
+        "title": "Twitter Email Alert Response",
+        "description": "",
+        "contributions": "",
+        "category": "",
+        "link": "",
+        "dates": "February 2015"
+    },
+    {
+        "title": "",
+        "description": "TwitIE Named Entity Recongition system research and evaluation - developed Java API on top of GATE Embedded w/TwitIE for automation of entity extraction in microblog corpora to be integrated into future projects",
+        "contributions": "",
+        "category": "",
+        "link": "",
+        "dates": "January 2015"
+    },
+    {
+        "title": "query-by-humming engine",
+        "description": "Information Search and Management final research project in developing a query by humming system to detect hummed melodies and match likely songs",
+        "contributions": "",
+        "category": "",
+        "link": "",
+        "dates": ""
+    },
+    {
+        "title": "Fiz / Flip",
+        "description": "an interpreter shell for a simple functional language (in the spirit of LISP) from scratch written in C++ with Flex and Bison",
+        "contributions": "",
+        "category": "",
+        "link": "",
+        "dates": ""
+    },
+    {
+        "title": "Linux Shell",
+        "description": "A robust alternative to bash Unix shell written in C++",
+        "contributions": "",
+        "category": "",
+        "link": "",
+        "dates": ""
+    },
+    {
+        "title": "MyHTTPD",
+        "description": "a web server implemented with threads, thread pooling, and process pooling operating modes written in C/C++",
+        "contributions": "",
+        "category": "",
+        "link": "",
+        "dates": ""
+    },
+    {
+        "title": "Oracle FastR",
+        "description": "",
+        "contributions": "",
+        "category": "",
+        "link": "",
+        "dates": ""
+    },
+    {
+        "title": "",
+        "description": "",
+        "contributions": "",
+        "category": "",
+        "link": "",
+        "dates": ""
+    },
+    {
+        "title": "",
+        "description": "",
+        "contributions": "",
+        "category": "",
+        "link": "",
+        "dates": ""
+    },
+    {
+        "title": "",
+        "description": "",
+        "contributions": "",
+        "category": "",
+        "link": "",
+        "dates": ""
+    },
+    {
+        "title": "",
+        "description": "Wave spawning FPS Android game built with Unity to learn basics of programming / game development",
+        "contributions": "",
+        "category": "",
+        "link": "",
+        "dates": "June 2013 - July 2013"
+    }
+]
