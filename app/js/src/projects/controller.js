@@ -43,7 +43,7 @@ app.controller('projectsController', ['$scope', '$http', function($scope, $http)
 
     $scope.nextProject = function() {
     	
-    	if ($scope.currentIndex >= $scope.projectList.length) {
+    	if ($scope.currentIndex >= $scope.projectList.length - 1) {
     		$scope.currentIndex = 0;
     	} else {
     		$scope.currentIndex++;
