@@ -16,6 +16,10 @@ app.config(function($routeProvider, $locationProvider) {
           templateUrl : 'js/src/research/index.html',
           controllerUrl : 'js/src/research/controller.js'
         })
+        .when('/blog', {
+          templateUrl : 'js/src/blog/index.html',
+          controllerUrl : 'js/src/blog/controller.js'
+        })
         .otherwise({
             redirectTo: '/index'
         });

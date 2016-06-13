@@ -28,6 +28,10 @@ app.get('projects.json', function(req, res) {
 	res.json(__dirname + 'js/src/projects/projects.json');
 });
 
+app.get('posts.json', function(req, res) {
+	res.json(__dirname + 'js/src/blog/posts.json');
+});
+
 app.get('/', function(req, res) {
 	res.sendFile(__dirname + '/index.html');
 });
