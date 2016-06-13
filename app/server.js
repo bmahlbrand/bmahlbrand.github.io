@@ -40,6 +40,6 @@ app.get('*', function(req, res) {
 	res.sendFile(__dirname + req.url);
 });
 
-app.listen(3000,function(){
+app.listen(80,function(){
   console.log("Live at Port 3000");
 });
