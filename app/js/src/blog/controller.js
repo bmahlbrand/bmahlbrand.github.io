@@ -2,17 +2,18 @@ var app = angular.module('ahlbrand.blog', []);
 
 app.controller('blogController', ['$scope', '$http', function($scope, $http) {
 	
-	$scope.projectList = null;
+	$scope.posts = null;
 	$scope.currentIndex = 0;
 
 	$http({
 		
 		method: 'GET', 
-		url: 'js/src/blog/posts.json'
+		//url: 'js/src/blog/posts.json'
+		url:'benjamin.ahlbrand.me:27017/blog/posts'
 
 	}).then(function successCallback(response) {
 		
-		$scope.projectList = response.data;
+		$scope.posts = response.data;
 
 		$scope.setProject();
 
@@ -52,4 +53,20 @@ app.controller('blogController', ['$scope', '$http', function($scope, $http) {
     	$scope.setProject();
     }
 
+    $scope.comment = function() {
+
+    }
+
+    $scope.like = function() {
+
+    }
+
+    $scope.addPost = function(){
+    	blog.post.createdOn = Date.now();
+    	blog.post.comments = [];
+    	blog.post.likes = 0;
+    	blog.posts.unshift(this.post);
+    	blog.tab = 0;
+    	blog.post = {};
+    }; 
 }]);
