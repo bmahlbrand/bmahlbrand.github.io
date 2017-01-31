@@ -1,7 +1,7 @@
 var express = require("express");
 var app = express();
 var router = express.Router();
-var cors = require('cors');
+var cors = require("cors");
 
 app.use(cors());
 app.use(express.static('app'));

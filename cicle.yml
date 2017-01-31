@@ -3,10 +3,10 @@ machine:
         version: 4.2.1
 test:
   override:
-      - cd client && npm test && cd ../server && npm test && cd ..
+    - npm test
 dependencies:
   override:
-    - cd client && npm install && cd ../server && npm install && cd ..
+    - npm install
   pre:
     - sudo apt-get install build-essential
     - sudo apt-get install gcc
