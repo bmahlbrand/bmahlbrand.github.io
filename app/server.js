@@ -1,6 +1,9 @@
 var express = require("express");
 var app = express();
 var router = express.Router();
+var cors = cors();
+
+app.use(cors());
 app.use(express.static('app'));
 // app.use('/', express.static(__dirname + '/js/src/'));
 // app.get('/projects', function(req, res) {
