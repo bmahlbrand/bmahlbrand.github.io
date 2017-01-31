@@ -16,7 +16,7 @@ const source = require('vinyl-source-stream');
 const buffer = require('vinyl-buffer');
 const forever = require('forever-monitor');
 
-const server = new forever.Monitor('./index.js');
+const server = new forever.Monitor('app/server.js');
 let isRunning = false;
 
 gulp.task('lint', ['lint:js', 'lint:sass']);
@@ -43,7 +43,7 @@ gulp.task('build:html', () => {
 });
 
 gulp.task('build:js', ['lint:js'], () => {
-    return browserify('src/app/app.js', {debug: true})
+    return browserify('app/app.js', {debug: true})
         .bundle()
         .pipe(source('app.min.js'))
         .pipe(buffer())

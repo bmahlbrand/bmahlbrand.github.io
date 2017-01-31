@@ -58,7 +58,7 @@
     "indent": [2, 4],
     "key-spacing": [2, {"beforeColon": false, "afterColon": true}],
     "lines-around-comment": [2, { "beforeBlockComment": true, "beforeLineComment": true }],
-    "linebreak-style": [2, "unix"],
+    "linebreak-style": [2, "windows"],
     "new-parens": 2,
     "newline-after-var": 2,
     "no-array-constructor": 2,
