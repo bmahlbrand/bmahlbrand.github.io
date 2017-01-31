@@ -1,6 +1,6 @@
 (function () {
 'use strict';
-var app = angular.module('ahlbrand', ['ngRoute', 'ahlbrand.projects', 'ahlbrand.research', 'ahlbrand.index']);
+var app = angular.module('ahlbrand', ['ngRoute', 'ahlbrand.projects', 'ahlbrand.research', 'ahlbrand.index', 'ahlbrand.blog']);
 
 app.config(function($routeProvider, $locationProvider) {
     $routeProvider
