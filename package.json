@@ -1,5 +1,5 @@
 {
-  "name": "gruntexp",
+  "name": "ahlbrand.blog",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
@@ -9,8 +9,7 @@
   },
   "author": "Benjamin Ahlbrand <bmahlbrand@gmail.com>",
   "license": "ISC",
-  "homepage": "",
-
+  "homepage": "benjamin.ahlbrand.me",
   "ignore": [
     "**/.*",
     "node_modules",
@@ -29,10 +28,7 @@
   },
   "dependencies": {
     "grunt-contrib-connect": "^0.11.2",
-    "express": "^4.12.3",
-    "jade": "^1.11.0",
     "cors": "^2.8.1",
-    "babel": "^5.8.23"
   },
   "devDependencies": {
     "babel": "^6.1.18",
