@@ -10,11 +10,11 @@
         </div>
         <div class="col-sm-8">
             <h2>{{ projectName }}</h2>
-            <p>{{ projectDescription }} </p>
-            <a href="{{ projectLink }}">git</a>
+            <h3>Ben Ahlbrand</h3>
             <p>
-                General timeline of the work: {{ projectDate }}
+                {{ projectDate }}
             </p>
+            <p>{{ projectDescription }} </p>
             <span ng-repeat="tag in tags">
                 {{tag.tag}}
             </span>
