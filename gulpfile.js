@@ -12,24 +12,53 @@ const autoprefixer = require('gulp-autoprefixer');
 const minify = require('gulp-minify-css');
 const rename = require('gulp-rename');
 const browserify = require('browserify');
+const babelify = require('babelify');
 const source = require('vinyl-source-stream');
 const buffer = require('vinyl-buffer');
 const forever = require('forever-monitor');
+const path = require('path');
+const del = require('del');
 
-const server = new forever.Monitor('app/server.js');
+const server = new forever.Monitor('./server.js');
 let isRunning = false;
+
+// const globs = [];
+
+const config = {
+    js: {
+
+        // Entry point
+        src: './app/js',
+
+        // Directory to save bundle to
+        outputDir: './dist/app',
+
+        // Name to use for bundle
+        outputFile: 'app.min.js'
+    },
+    sass: {
+        src: '',
+        outputDir: '',
+        outputFile: ''
+    },
+    html: {
+        src: '',
+        outputDir: './dist/',
+        outputFile: ''
+    }
+};
 
 gulp.task('lint', ['lint:js', 'lint:sass']);
 
 gulp.task('lint:js', () => {
-    return gulp.src(['src/components/*/**/*.js', 'server.js', 'gulpfile.js'])
+    return gulp.src([path.join(config.js.src, '/**/*.js'), 'server.js', 'gulpfile.js'])
        .pipe(eslint())
        .pipe(eslint.format())
        .pipe(eslint.failAfterError());
 });
 
 gulp.task('lint:sass', () => {
-    return gulp.src('src/sass/**/*.scss')
+    return gulp.src('app/sass/*.scss')
        .pipe(sassLint())
        .pipe(sassLint.format())
        .pipe(sassLint.failOnError());
@@ -37,32 +66,49 @@ gulp.task('lint:sass', () => {
 
 gulp.task('build', ['build:js', 'build:sass', 'build:html']);
 
-gulp.task('build:html', () => {
-    return gulp.src('src/*/**/*.tpl.html')
-       .pipe(gulp.dest('dist/'));
+gulp.task('build:html', [], () => {
+    return gulp.src('*/**/*.html')
+       .pipe(gulp.dest(config.html.outputDir));
 });
 
 gulp.task('build:js', ['lint:js'], () => {
     return browserify('app/app.js', {debug: true})
+        .transform(babelify.configure({presets: ['es2015', 'angular']}))
         .bundle()
-        .pipe(source('app.min.js'))
+        .pipe(source(config.js.outputFile))
         .pipe(buffer())
-        .pipe(gulp.dest('dist/app'));
+        .pipe(gulp.dest(config.js.outputDir));
 });
 
 gulp.task('build:sass', ['lint:sass'], () => {
-    return gulp.src('src/sass/main.scss')
+    return gulp.src('sass/main.scss')
                .pipe(sass())
                .pipe(autoprefixer())
                .pipe(minify())
                .pipe(rename('app.min.css'))
-               .pipe(gulp.dest('dist/css'));
+               .pipe(gulp.dest(config.js.outputDir));
+});
+
+gulp.task('clean', (cb) => {
+    del(['dist/app'], cb);
+});
+
+gulp.task('clean:js', (cb) => {
+    del(['dist/*.js'], cb);
+});
+
+gulp.task('clean:html', (cb) => {
+    del(['dist/*.html'], cb);
+});
+
+gulp.task('clean:css', (cb) => {
+    del(['dist/*.css'], cb);
 });
 
 gulp.task('watch', ['build'], () => {
-    gulp.watch('src/**/*.js', ['build:js']);
-    gulp.watch('src/sass/**/*.scss', ['build:sass']);
-    gulp.watch('src/*/**/*.tpl.html', ['build:html']);
+    gulp.watch('js/**/*.js', ['build:js']);
+    gulp.watch('sass/**/*.scss', ['build:sass']);
+    gulp.watch('*/**/*.html', ['build:html']);
 });
 
 server.on('start', () => {
@@ -70,6 +116,12 @@ server.on('start', () => {
 });
 server.on('exit', () => {
     console.log(`DEV: exiting server at ${Date.now()}`);
+    process.exit();
+});
+
+process.on('SIGINT', () => {
+    console.log(`DEV: exiting server at ${Date.now()}`);
+    process.exit();
 });
 
 gulp.task('run', ['lint'], () => {
