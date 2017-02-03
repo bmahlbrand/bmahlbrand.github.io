@@ -1,33 +1,12 @@
-(function () {
-'use strict';
-var app = angular.module('ahlbrand', ['ngRoute', 'ahlbrand.projects', 'ahlbrand.research', 'ahlbrand.index', 'ahlbrand.blog']);
-
-app.config(function($routeProvider, $locationProvider) {
-    $routeProvider
-        .when('/index', {
-          templateUrl : 'js/src/index/index.html',
-          controllerUrl : 'js/src/index/controller.js'
-        })
-        .when('/projects', {
-          templateUrl : 'js/src/projects/index.html',
-          controllerUrl : 'js/src/projects/controller.js'
-        })
-        .when('/research', {
-          templateUrl : 'js/src/research/index.html',
-          controllerUrl : 'js/src/research/controller.js'
-        })
-        .when('/blog', {
-          templateUrl : 'js/src/blog/index.html',
-          controllerUrl : 'js/src/blog/controller.js'
-        })
-        .otherwise({
-            redirectTo: '/index'
-        });
-    
-    $locationProvider.html5Mode(true);
-});
-
+import {app} from './bootstrap';
+import './js/header/header';
+import './js/footer/footer';
+import './js/content/content';
+import './js/error/error';
+import './js/index/index';
+import './js/research/research';
+import './js/projects/projects';
+import './js/blog/blog';
+import './js/gallery/gallery';
 // app.run(['$rootScope', function($scope) {
 // }]);
-
-})();

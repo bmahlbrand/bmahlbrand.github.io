@@ -1,5 +1,5 @@
 body {
-  min-height: 2000px;
+  min-height: 600px;
   padding-top: 70px;
 }
 
@@ -11,6 +11,7 @@ ul.nav a:hover { color: #000000 !important; }
   transform: translateY(-50%);
 }
 
-.row {
-	min-height: 300px;
+li.project_link:hover {
+	font-weight: bold;
+	color: #100000 !important; 
 }

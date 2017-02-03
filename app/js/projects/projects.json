@@ -1,0 +1,114 @@
+[
+    {
+        "title": "VAST Challenge 2015",
+        "description": "",
+        "contributions": "",
+        "tags": [{"tag":"machine learning"},{"tag":"python"},{"tag":"backend"}],
+        "link": "http://vacommunity.org/VAST+Challenge+2015",
+        "dates": "June 2015 - July 2015"
+    },
+    {
+        "title": "PixelTone",
+        "description": "a webapp facilitating the uploading of pictures to be analyzed by Microsoft’s Project Oxford DeepVision API to determine possible emotional indicators of people in the images, coupled with work that extracts a dominant color palette to be considered as input parameters to procedurally generate music fitting the input image’s ‘vibe’ through use of a knowledge base constructed with domain knowledge of harmony and rhythm, coupled with genetic evolutionary algorithms to produce a song in MIDI file format to be returned to the front end view and a displayed score for the user to follow along with. Recognized by Purdue’s Computer Science department as an exceptional project Spring 2016",
+        "contributions": "",
+        "tags": [{"tag":"machine learning"}, {"tag":"procedural generation"}, {"tag":"audio"}],
+        "link": "https://github.com/bmahlbrand/PixelTone",
+        "dates": "January 2016 - May 2016"
+    },
+    {
+        "title": "Impromptune",
+        "description": "a Java application extending on the feature set of Zong! viewer, while also implementing a dynamic music generation based on the current loaded musical score. We took a static musicXML score viewer and added many features to it while using a Scrum software development methodology.",
+        "contributions": "",
+        "tags": [{"tag":"machine learning"}, {"tag":"procedural generation"}, {"tag":"audio"}],
+        "link": "https://github.com/phill117/Impromptune",
+        "dates": "January 2015 - May 2015"
+    },
+    {
+        "title": "Social Media Analytics and Reporting Toolkit (SMART)",
+        "description": "TwitIE Named Entity Recongition system research and evaluation - developed Java API on top of GATE Embedded w/TwitIE for automation of entity extraction in microblog corpora to be integrated into future projects",
+        "contributions": "Twitter Email Alert Response",
+        "tags": [{"tag": "javascript"}, {"tag":"python"}, {"tag":"java"}, {"tag":"web development"}],
+        "link": "https://www.cerias.purdue.edu/research/projects/home/detail/175/social_media_analytics_and_reporting_toolkit_smart",
+        "dates": "December 2014 - current"
+    },
+    {
+        "title": "Purdue Cognition & Learning Laboratory",
+        "description": "Description here",
+        "contributions": "",
+        "tags": [{"tag": "NodeJS"}, {"tag": "PHP"}, {"tag": "MongoDB"}, {"tag": "MySQL"}],
+        "link": "http://learninglab.psych.purdue.edu/",
+        "dates": "June 2015 - April 2015"
+    },
+    {
+        "title": "query-by-humming engine",
+        "description": "Information Search and Management final research project in developing a query by humming system to detect hummed melodies and match likely songs",
+        "contributions": "",
+        "tags": "",
+        "link": "",
+        "dates": ""
+    },
+    {
+        "title": "Fiz / Flip",
+        "description": "an interpreter shell for a simple functional language (in the spirit of LISP) from scratch written in C++ with Flex and Bison",
+        "contributions": "",
+        "tags": "",
+        "link": "",
+        "dates": ""
+    },
+    {
+        "title": "Linux Shell",
+        "description": "A robust alternative to bash Unix shell written in C++",
+        "contributions": "",
+        "tags": "",
+        "link": "",
+        "dates": ""
+    },
+    {
+        "title": "MyHTTPD",
+        "description": "a web server implemented with threads, thread pooling, and process pooling operating modes written in C/C++ supporting dynamicly loaded libraries",
+        "contributions": "",
+        "tags": "",
+        "link": "",
+        "dates": "Fall 2015"
+    },
+    {
+        "title": "Oracle FastR",
+        "description": "",
+        "contributions": "",
+        "tags": "",
+        "link": "",
+        "dates": "Summer 2014"
+    },
+    {
+        "title": "C / C++ networking",
+        "description": "IPv4/IPv6 packet dumper for TCP, UDP, ARP, ICMP packets, multithreaded inflection server, multithreaded FTP server, SDN data center simulation / multi-tenant flow restrictions",
+        "contributions": "",
+        "tags": "",
+        "link": "",
+        "dates": "Spring 2016"
+    },
+    {
+        "title": "Software Rasterizer",
+        "description": "Built and extended a software rasterizer from scratch for rendering triangles, ray tracing, clipping, depth masking, texture mapping, model space/screen space interpolation, hard / soft shadows, projective textures, reflections, refractions, depth imposters for reflections",
+        "contributions": "",
+        "tags": "OpenGL",
+        "link": "",
+        "dates": ""
+    },
+    {
+        "title": "Purdue EPICS (Engineering Projects In Community Service, APPS - TADA)",
+        "description": "TADA (Technology Assisted Dietary Assessment) Android application aims to provide a simple way to track your daily diet, provide recommendations, while researchers working with project advisor Dr. Edward Delp and VIPER lab students gather geo-tagged data and nutritional habits Implemented functionality to allow multiple UPC barcodes, images of meals to be batch processed by server to determine nutritional content for users Implemented a local datastore for client side caching of personal dietary history",
+        "contributions": "",
+        "tags": "",
+        "link": "",
+        "dates": ""
+    },
+    {
+        "title": "",
+        "description": "Wave spawning FPS Android game built with Unity to learn basics of programming / game development",
+        "contributions": "",
+        "tags": "",
+        "link": "",
+        "dates": "June 2013 - July 2013"
+    }
+]
