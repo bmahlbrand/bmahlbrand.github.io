@@ -30,9 +30,8 @@ function BlogController($scope, $http) {
     $scope.setProject = () => {
 
         $scope.projectName = $scope.posts[$scope.currentIndex].title;
-        $scope.projectDescription = $scope.posts[$scope.currentIndex].description;
-        $scope.projectLink = $scope.posts[$scope.currentIndex].link;
-        $scope.projectDate = $scope.posts[$scope.currentIndex].dates;
+        $scope.projectDescription = $scope.posts[$scope.currentIndex].body;
+        $scope.projectDate = $scope.posts[$scope.currentIndex].date;
         $scope.tags = $scope.posts[$scope.currentIndex].tags;
 
     };
