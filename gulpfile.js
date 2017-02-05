@@ -112,15 +112,15 @@ gulp.task('watch', ['build'], () => {
 });
 
 server.on('start', () => {
-    console.log(`DEV: starting server at ${Date.now()}`);
+    console.log(`DEV: starting server at ${new Date().toISOString()}`);
 });
 server.on('exit', () => {
-    console.log(`DEV: exiting server at ${Date.now()}`);
+    console.log(`DEV: exiting server at ${new Date().toISOString()}`);
     process.exit();
 });
 
 process.on('SIGINT', () => {
-    console.log(`DEV: exiting server at ${Date.now()}`);
+    console.log(`DEV: exiting server at ${new Date().toISOString()}`);
     process.exit();
 });
 

@@ -83,17 +83,29 @@ app.get('*.js', (req, res) => {
     res.sendFile(path.join(__dirname, req.url));
 });
 */
-app.get('/*', (req, res) => {
+
+app.use((req, res, next) => {
     const geo = geoip.lookup(req.ip);
 
     console.log(req.ip);
     console.log(req.headers['user-agent']);
 
     console.log(geo);
-
-    fs.appendFileSync('log.txt', JSON.stringify(geo));
+    fs.appendFileSync('log.txt', 'new request:');
     fs.appendFileSync('log.txt', '\n');
+    fs.appendFileSync('log.txt', req.ip);
+    fs.appendFileSync('log.txt', '\n');
+    fs.appendFileSync('log.txt', req.headers['user-agent']);
+    fs.appendFileSync('log.txt', '\n');
+    fs.appendFileSync('log.txt', new Date().toISOString());
+    fs.appendFileSync('log.txt', JSON.stringify(geo));
+    fs.appendFileSync('log.txt', '\n\n');
 
+    next();
+
+});
+
+app.get('/*', (req, res) => {
     console.log(path.join(__dirname, req.url));
     res.sendFile(path.join(__dirname, 'index.html'));
 });
