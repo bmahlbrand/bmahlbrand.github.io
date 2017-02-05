@@ -35,18 +35,23 @@ div.description {
 	display: inline;
 }
 
+/*
 ul.software {
 	display: inline;
 	list-style-type: none;
 	padding-right: 20px;
 }
 
-/*
 li.sk {
 	float: left;
 	padding: 3px;
 }
 */
+
+html, body{
+    margin:0px;
+    padding:0px;
+}
 
 .texts {
 	display: inline;
