@@ -29,7 +29,7 @@ app.get('/favicon.ico', (req, res) => {
     res.sendFile(filepath);
 });
 
-app.get('/resume', (req, res) => {
+app.get('resume', (req, res) => {
     const filepath = path.join(__dirname, 'cv_ahlbrand.pdf');
 
     console.log('resume', filepath);
@@ -91,7 +91,7 @@ app.get('/*', (req, res) => {
 
     console.log(geo);
 
-    fs.appendFileSync('log.txt', geo);
+    fs.appendFileSync('log.txt', JSON.stringify(geo));
     fs.appendFileSync('log.txt', '\n');
 
     console.log(path.join(__dirname, req.url));
