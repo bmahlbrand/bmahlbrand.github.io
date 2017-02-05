@@ -3,6 +3,8 @@ function GalleryController($scope, $http, $interval) {
     $scope.posts = null;
     $scope.tags = null;
 
+    let stopTime = null;
+
     $scope.currentIndex = 0;
 
     $http({
@@ -32,14 +34,14 @@ function GalleryController($scope, $http, $interval) {
         $scope.link = $scope.posts[$scope.currentIndex].link;
         $scope.tags = $scope.posts[$scope.currentIndex].tags;
 
-        const stopTime = $interval($scope.nextProject, 10000);
+        if (stopTime) {
+            $interval.cancel(stopTime);
+        }
+
+        stopTime = $interval($scope.nextProject, 10000);
 
         // listen on DOM destroy (removal) event, and cancel the next UI update
         // to prevent updating time after the DOM element was removed.
-
-        $scope.on('$destroy', () => {
-            $interval.cancel(stopTime);
-        });
 
         // $scope.projectDate = $scope.posts[$scope.currentIndex].dates;
 
@@ -67,6 +69,9 @@ function GalleryController($scope, $http, $interval) {
         $scope.setProject();
     };
 
+    $scope.$on('$destroy', () => {
+        $interval.cancel(stopTime);
+    });
 }
 
 export default ['$scope', '$http', '$interval', GalleryController];
