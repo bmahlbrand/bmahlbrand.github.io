@@ -15,7 +15,7 @@
 	{ "link": "app/img/watercimulation1.png", "tags": [{"tag": "OpenGL"}, {"tag": "GLSL"}, {"tag": "water simulation"}, {"tag": "procedural generation"}] },
 	{ "link": "app/img/watercimulation2.png", "tags": [{"tag": "OpenGL"}, {"tag": "GLSL"}, {"tag": "water simulation"}, {"tag": "procedural generation"}] },
 	{ "link": "app/img/bunnysoftshadow.png", "tags": [{"tag": "OpenGL"}, {"tag": "GLSL"}, {"tag": "global illumination"}, {"tag": "many lights"}, {"tag": "deferred rendering"}] },
-	{ "link": "app/img/dragongoroaud.PNG", "tags": [{"tag": "OpenGL"}, {"tag": "GLSL"}, {"tag": "global illumination"}] },
+	{ "link": "app/img/dragongoroaud.png", "tags": [{"tag": "OpenGL"}, {"tag": "GLSL"}, {"tag": "global illumination"}] },
 	{ "link": "app/img/dragonsketchr.png", "tags": [{"tag": "OpenGL"}, {"tag": "GLSL"}, {"tag": "post processing"}, {"tag": "non-photorealistic rendering"}] },
-	{ "link": "app/img/bunnytoon.PNG", "tags": [{"tag": "OpenGL"}, {"tag": "GLSL"}, {"tag": "post processing"}, {"tag": "non-photorealistic rendering"}] }
+	{ "link": "app/img/bunnytoon.png", "tags": [{"tag": "OpenGL"}, {"tag": "GLSL"}, {"tag": "post processing"}, {"tag": "non-photorealistic rendering"}] }
 ]
