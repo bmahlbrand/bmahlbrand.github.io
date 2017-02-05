@@ -108,7 +108,7 @@ gulp.task('clean:css', (cb) => {
 gulp.task('watch', ['build'], () => {
     gulp.watch('js/**/*.js', ['build:js']);
     gulp.watch('sass/**/*.scss', ['build:sass']);
-    gulp.watch('*/**/*.html', ['build:html']);
+    gulp.watch('js/**/*.html', ['build:html']);
 });
 
 server.on('start', () => {
