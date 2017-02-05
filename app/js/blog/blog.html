@@ -2,20 +2,23 @@
     <h1>Blog</h1>
     <div class="row">
         <div class="col-sm-2">
-        <ul class="nav">
+        <ul class="nav sidebar">
             <li class="project_link" ng-click="selectPost($event, post.title)" ng-repeat="post in posts">
                 {{ post.title }}
             </li>
         </ul>
         </div>
         <div class="col-sm-8">
-            <h2>{{ projectName }}</h2>
+            <h2>{{ currentPost.title }}</h2>
             <h3>Ben Ahlbrand</h3>
             <p>
-                {{ projectDate }}
+                {{ currentPost.date }}
             </p>
-            <p>{{ projectDescription }} </p>
-            <span ng-repeat="tag in tags">
+
+            <p> {{ currentPost.abstract }}</p>
+
+            <p ng-repeat="section in currentPost.body"> {{ section.section }} </p>
+            <span ng-repeat="tag in currentPost.tags">
                 {{tag.tag}}
             </span>
         </div>

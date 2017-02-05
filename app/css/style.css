@@ -13,5 +13,39 @@ ul.nav a:hover { color: #000000 !important; }
 
 li.project_link:hover {
 	font-weight: bold;
-	color: #100000 !important; 
+	color: #100000 !important;
+	-webkit-user-select: none;  /* Chrome all / Safari all */
+    -moz-user-select: none;     /* Firefox all */
+    -ms-user-select: none;      /* IE 10+ */
+  	user-select: none; 
+}
+
+ul.sidebar {
+
+}
+
+img.profile {
+	max-width: 256px;
+	float: right;
+	display: inline-block;
+	padding: 20px;
+}
+
+div.description {
+	display: inline;
+}
+
+ul.software {
+	display: inline;
+	list-style-type: none;
+	padding-right: 20px;
+}
+
+li.sk {
+	float: left;
+	padding: 3px;
+}
+
+.texts {
+	display: inline;
 }
