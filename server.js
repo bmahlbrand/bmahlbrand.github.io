@@ -6,6 +6,7 @@ const app = express();
 const cors = require('cors');
 const path = require('path');
 const fs = require('fs');
+const geoip = require('geoip-lite');
 
 app.use(cors());
 
@@ -83,7 +84,16 @@ app.get('*.js', (req, res) => {
 });
 */
 app.get('/*', (req, res) => {
+    const geo = geoip.lookup(req.ip);
+
+    console.log(req.ip);
     console.log(req.headers['user-agent']);
+
+    console.log(geo);
+
+    fs.appendFileSync('log.txt', geo);
+    fs.appendFileSync('log.txt', '\n');
+
     console.log(path.join(__dirname, req.url));
     res.sendFile(path.join(__dirname, 'index.html'));
 });
