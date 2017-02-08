@@ -15,7 +15,7 @@ const db = require('./db');
 const blogPosts = require('./blogPostRoutes');
 
 app.use(cors());
-app.use('posts', blogPosts);
+app.use('/posts', blogPosts);
 
 // app.use(express.static('app'));
 
@@ -36,7 +36,7 @@ app.get('/favicon.ico', (req, res) => {
     res.sendFile(filepath);
 });
 
-app.get('resume', (req, res) => {
+app.get('/resume', (req, res) => {
     const filepath = path.join(__dirname, 'cv_ahlbrand.pdf');
 
     console.log('resume', filepath);
