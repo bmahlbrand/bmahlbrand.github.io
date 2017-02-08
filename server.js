@@ -3,7 +3,7 @@ require('babel-register');
 
 const express = require('express');
 const app = express();
-
+const BlogPost = require('./app/models/blogpostModel');
 // const router = express.Router();
 
 const cors = require('cors');
@@ -72,7 +72,12 @@ app.get('*posts.json', (req, res) => {
 });
 
 */
-app.use('*posts', blogPosts);
+app.use('*posts', (req, res, next) => {
+    BlogPost.find({}, (err, docs) => {
+        console.log(docs);
+    });
+    console.log('fire');
+});
 
 app.get('*pix.json', (req, res) => {
 
