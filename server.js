@@ -57,7 +57,10 @@ app.get('*projects.json', (req, res) => {
 
 app.get('*posts.json', (req, res) => {
 
-    res.send(db.get().collection('posts'));
+    res.send(db.get().collection('posts').toArray((err, docs) => {
+
+    }));
+
     const filepath = path.join(__dirname, 'app/js/blog/posts.json');
     const encoding = 'utf8';
     const file = fs.readFileSync(filepath, encoding);
