@@ -93,8 +93,6 @@ app.use(galleryRoutes);
 
 // });
 
-
-
 // app.get('*pix.json', (req, res) => {
 
 //     const filepath = path.join(__dirname, 'app/js/gallery/pix.json');
