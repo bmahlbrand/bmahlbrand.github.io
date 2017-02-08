@@ -4,9 +4,10 @@ const BlogPost = require('./app/models/blogpostModel');
 
 const blogRoutes = module.exports = express.Router();
 
-blogRoutes.get('*posts', () => {
+blogRoutes.get('*posts', (req, res, next) => {
 	BlogPost.find({}, (err, docs) => {
 		console.log(docs);
 	});
 	console.log('fire');
+	next();
 });
