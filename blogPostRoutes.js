@@ -4,10 +4,17 @@ const BlogPost = require('./app/models/blogpostModel');
 
 const blogRoutes = module.exports = express();
 
-blogRoutes.get('*posts', (req, res, next) => {
-	BlogPost.find({}, (err, docs) => {
-		console.log(docs);
-	});
-	console.log('fire');
-	next();
+blogRoutes.get('*posts', (req, res) => {
+    BlogPost.find({}, (err, posts) => {
+        if (!err) {
+            console.log(posts);
+            console.log('fire');
+            res.json(posts);
+        } else {
+            console.log(err);
+        }
+
+    });
+
 });
+

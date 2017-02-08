@@ -14,6 +14,7 @@ const geoip = require('geoip-lite');
 const db = require('./db');
 
 const blogPosts = require('./blogPostRoutes');
+const projectsRoutes = require('./projectsRoutes');
 
 app.use(cors());
 
@@ -73,19 +74,7 @@ app.get('*posts.json', (req, res) => {
 });
 
 */
-app.use('*posts', (req, res) => {
-    BlogPost.find({}, (err, posts) => {
-        if (!err) {
-            console.log(posts);
-            console.log('fire');
-            res.json(posts);
-        } else {
-            console.log(err);
-        }
-
-    });
-
-});
+app.use(blogPosts);
 
 app.use('*pix', (req, res) => {
     Gallery.find({}, (err, gallery) => {
