@@ -73,9 +73,15 @@ app.get('*posts.json', (req, res) => {
 */
 app.use('*posts', (req, res) => {
     BlogPost.find({}, (err, posts) => {
-        console.log(posts, err);
+        if (!err) {
+            console.log(posts);
+            console.log('fire');    
+        } else {
+            console.log(err);
+        }
+        
     });
-    console.log('fire');
+    
 });
 
 app.get('*pix.json', (req, res) => {
