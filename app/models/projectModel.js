@@ -8,6 +8,6 @@ const projectSchema = mongoose.Schema({
 	dates: { type: Date, default: Date.now },
 	tags: [ { tag: String } ],
 
-}});
+});
 
 module.exports = mongoose.model('Project', projectSchema);
