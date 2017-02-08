@@ -58,14 +58,14 @@ app.get('*projects.json', (req, res) => {
 app.get('*posts.json', (req, res) => {
 
     res.send(db.get().collection('posts').find().toArray((err, docs) => {
-
+        console.log(docs);
     }));
 
     const filepath = path.join(__dirname, 'app/js/blog/posts.json');
     const encoding = 'utf8';
     const file = fs.readFileSync(filepath, encoding);
 
-    res.json(JSON.parse(file));
+    // res.json(JSON.parse(file));
 });
 
 app.get('*pix.json', (req, res) => {
