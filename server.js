@@ -15,7 +15,6 @@ const db = require('./db');
 const blogPosts = require('./blogPostRoutes');
 
 app.use(cors());
-app.use('*posts', blogPosts);
 
 // app.use(express.static('app'));
 
@@ -73,6 +72,7 @@ app.get('*posts.json', (req, res) => {
 });
 
 */
+app.use('*posts', blogPosts);
 
 app.get('*pix.json', (req, res) => {
 
