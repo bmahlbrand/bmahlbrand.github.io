@@ -4,7 +4,6 @@ require('babel-register');
 const express = require('express');
 const app = express();
 const BlogPost = require('./app/models/blogpostModel');
-// const router = express.Router();
 
 const cors = require('cors');
 const path = require('path');
