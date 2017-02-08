@@ -57,7 +57,7 @@ app.get('*projects.json', (req, res) => {
 
 app.get('*posts.json', (req, res) => {
 
-    res.send(db.get().collection('posts').toArray((err, docs) => {
+    res.send(db.get().collection('posts').find().toArray((err, docs) => {
 
     }));
 
