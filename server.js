@@ -76,6 +76,7 @@ app.use('*posts', (req, res) => {
         if (!err) {
             console.log(posts);
             console.log('fire');
+            res.json(posts);
         } else {
             console.log(err);
         }
