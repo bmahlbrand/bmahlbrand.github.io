@@ -6,6 +6,7 @@ const app = express();
 const cors = require('cors');
 const path = require('path');
 const fs = require('fs');
+const geoip = require('geoip-lite');
 
 app.use(cors());
 
@@ -28,7 +29,7 @@ app.get('/favicon.ico', (req, res) => {
     res.sendFile(filepath);
 });
 
-app.get('/resume', (req, res) => {
+app.get('resume', (req, res) => {
     const filepath = path.join(__dirname, 'cv_ahlbrand.pdf');
 
     console.log('resume', filepath);
@@ -82,8 +83,29 @@ app.get('*.js', (req, res) => {
     res.sendFile(path.join(__dirname, req.url));
 });
 */
-app.get('/*', (req, res) => {
+
+app.use((req, res, next) => {
+    const geo = geoip.lookup(req.ip);
+
+    console.log(req.ip);
     console.log(req.headers['user-agent']);
+
+    console.log(geo);
+    fs.appendFileSync('log.txt', 'new request:');
+    fs.appendFileSync('log.txt', '\n');
+    fs.appendFileSync('log.txt', req.ip);
+    fs.appendFileSync('log.txt', '\n');
+    fs.appendFileSync('log.txt', req.headers['user-agent']);
+    fs.appendFileSync('log.txt', '\n');
+    fs.appendFileSync('log.txt', new Date().toISOString());
+    fs.appendFileSync('log.txt', JSON.stringify(geo));
+    fs.appendFileSync('log.txt', '\n\n');
+
+    next();
+
+});
+
+app.get('/*', (req, res) => {
     console.log(path.join(__dirname, req.url));
     res.sendFile(path.join(__dirname, 'index.html'));
 });
