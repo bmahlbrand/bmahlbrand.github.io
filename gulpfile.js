@@ -4,6 +4,9 @@
 // and will error out by default on 'use strict' calls
 'use strict';
 
+// use full ES6 everywhere else
+require('babel-register');
+
 const gulp = require('gulp');
 const eslint = require('gulp-eslint');
 const sass = require('gulp-sass');
@@ -20,38 +23,15 @@ const path = require('path');
 const del = require('del');
 
 const server = new forever.Monitor('./server.js');
+const config = require('./config.js').build;
 let isRunning = false;
 
 // const globs = [];
 
-const config = {
-    js: {
-
-        // Entry point
-        src: './app/js',
-
-        // Directory to save bundle to
-        outputDir: './dist/app',
-
-        // Name to use for bundle
-        outputFile: 'app.min.js'
-    },
-    sass: {
-        src: '',
-        outputDir: '',
-        outputFile: ''
-    },
-    html: {
-        src: '',
-        outputDir: './dist/',
-        outputFile: ''
-    }
-};
-
 gulp.task('lint', ['lint:js', 'lint:sass']);
 
 gulp.task('lint:js', () => {
-    return gulp.src([path.join(config.js.src, '/**/*.js'), 'server.js', 'gulpfile.js'])
+    return gulp.src([path.join(config.js.src, '/**/*.js'), 'server.js', 'db.js', 'gulpfile.js'])
        .pipe(eslint())
        .pipe(eslint.format())
        .pipe(eslint.failAfterError());
