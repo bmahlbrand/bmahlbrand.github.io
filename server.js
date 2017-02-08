@@ -15,6 +15,7 @@ const db = require('./db');
 
 const blogPosts = require('./blogPostRoutes');
 const projectsRoutes = require('./projectsRoutes');
+const galleryRoutes = require('./galleryRoutes');
 
 app.use(cors());
 
@@ -75,34 +76,24 @@ app.get('*posts.json', (req, res) => {
 
 */
 app.use(blogPosts);
+app.use(projectsRoutes);
+app.use(galleryRoutes);
 
-app.use('*pix', (req, res) => {
-    Gallery.find({}, (err, gallery) => {
-        if (!err) {
-            console.log(gallery);
-            console.log('fire');
-            res.json(gallery);
-        } else {
-            console.log(err);
-        }
+// app.use('*pix', (req, res) => {
+//     Gallery.find({}, (err, gallery) => {
+//         if (!err) {
+//             console.log(gallery);
+//             console.log('fire');
+//             res.json(gallery);
+//         } else {
+//             console.log(err);
+//         }
 
-    });
+//     });
 
-});
+// });
 
-app.use('*projects', (req, res) => {
-    Project.find({}, (err, projects) => {
-        if (!err) {
-            console.log(projects);
-            console.log('fire');
-            res.json(projects);
-        } else {
-            console.log(err);
-        }
 
-    });
-
-});
 
 // app.get('*pix.json', (req, res) => {
 
