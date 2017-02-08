@@ -5,8 +5,8 @@ export const app = angular.module('ahlbrand', ['ui.router']);
 
 // angular.bootstrap(document.getElementById('ahlbrand'), ['ahlbrand'], {debugInfoEnabled: true});
 
-app.config(['$urlRouterProvider', '$urlMatcherFactoryProvider', '$locationProvider', '$compileProvider',
-  ($urlRouterProvider, $urlMatcherFactoryProvider, $locationProvider, $compileProvider) => {
+app.config(['$urlRouterProvider', '$urlMatcherFactoryProvider', '$locationProvider', '$compileProvider', '$stateProvider',
+  ($urlRouterProvider, $urlMatcherFactoryProvider, $locationProvider, $compileProvider, $stateProvider) => {
 
       // Allow trailing slashes on URLs.
       $urlMatcherFactoryProvider.strictMode(false);
@@ -23,5 +23,9 @@ app.config(['$urlRouterProvider', '$urlMatcherFactoryProvider', '$locationProvid
               console.log('location: ', $location);
               $state.go('index');
           }]);
+      });
+
+      $stateProvider.state('resume', {
+        url: '/resume'
       });
   }]);
