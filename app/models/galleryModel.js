@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 const gallerySchema = mongoose.Schema({
 
 	tags: [ { tag: String } ],
-	link: [ { link: String } ]
+	link: { link: String }
 
 });
 
