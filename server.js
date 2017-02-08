@@ -5,6 +5,7 @@ const express = require('express');
 const app = express();
 const BlogPost = require('./app/models/blogpostModel');
 const Gallery = require('./app/models/galleryModel');
+const Project = require('./app/models/projectModel');
 
 const cors = require('cors');
 const path = require('path');
@@ -48,14 +49,14 @@ app.get('*index.js', (req, res) => {
     res.sendFile(filepath);
 });
 
-app.get('*projects.json', (req, res) => {
+// app.get('*projects.json', (req, res) => {
 
-    const filepath = path.join(__dirname, 'app/js/projects/projects.json');
-    const encoding = 'utf8';
-    const file = fs.readFileSync(filepath, encoding);
+//     const filepath = path.join(__dirname, 'app/js/projects/projects.json');
+//     const encoding = 'utf8';
+//     const file = fs.readFileSync(filepath, encoding);
 
-    res.json(JSON.parse(file));
-});
+//     res.json(JSON.parse(file));
+// });
 
 /*
 app.get('*posts.json', (req, res) => {
@@ -100,6 +101,19 @@ app.use('*pix', (req, res) => {
 
 });
 
+app.use('*projects', (req, res) => {
+    Project.find({}, (err, projects) => {
+        if (!err) {
+            console.log(projects);
+            console.log('fire');
+            res.json(projects);
+        } else {
+            console.log(err);
+        }
+
+    });
+
+});
 
 // app.get('*pix.json', (req, res) => {
 
