@@ -8,4 +8,5 @@ blogRoutes.get('posts', () => {
 	BlogPost.find({}, (err, docs) => {
 		console.log(docs);
 	});
+	console.log('fire');
 });
