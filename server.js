@@ -71,7 +71,7 @@ app.get('*posts.json', (req, res) => {
 });
 
 */
-app.use('*posts', (req, res, next) => {
+app.use('*posts', (req, res) => {
     BlogPost.find({}, (err, posts) => {
         console.log(posts, err);
     });
@@ -158,7 +158,7 @@ app.get('*', (req, res) => {
 */
 
 // Connect to Mongo on start
-db.connect('mongodb://localhost:27017/ahlbrand_blog', (err) => {
+db.connect('mongodb://localhost:27017/blog', (err) => {
     if (err) {
         console.log('Unable to connect to Mongo.');
         process.exit(1);
