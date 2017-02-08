@@ -9,3 +9,5 @@ const projectSchema = mongoose.Schema({
 	tags: [ { tag: String } ],
 
 }});
+
+module.exports = mongoose.model('Project', projectSchema);
