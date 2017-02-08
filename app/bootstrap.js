@@ -24,8 +24,4 @@ app.config(['$urlRouterProvider', '$urlMatcherFactoryProvider', '$locationProvid
               $state.go('index');
           }]);
       });
-
-      $stateProvider.state('resume', {
-        url: '/resume'
-      });
   }]);
