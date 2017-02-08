@@ -4,6 +4,7 @@ require('babel-register');
 const express = require('express');
 const app = express();
 const BlogPost = require('./app/models/blogpostModel');
+const Gallery = require('./app/models/galleryModel');
 
 const cors = require('cors');
 const path = require('path');
@@ -85,14 +86,29 @@ app.use('*posts', (req, res) => {
 
 });
 
-app.get('*pix.json', (req, res) => {
+app.use('*pix', (req, res) => {
+    Gallery.find({}, (err, gallery) => {
+        if (!err) {
+            console.log(gallery);
+            console.log('fire');
+            res.json(gallery);
+        } else {
+            console.log(err);
+        }
 
-    const filepath = path.join(__dirname, 'app/js/gallery/pix.json');
-    const encoding = 'utf8';
-    const file = fs.readFileSync(filepath, encoding);
+    });
 
-    res.json(JSON.parse(file));
 });
+
+
+// app.get('*pix.json', (req, res) => {
+
+//     const filepath = path.join(__dirname, 'app/js/gallery/pix.json');
+//     const encoding = 'utf8';
+//     const file = fs.readFileSync(filepath, encoding);
+
+//     res.json(JSON.parse(file));
+// });
 
 app.get('*.png', (req, res) => {
     res.sendFile(path.join(__dirname, req.url));
