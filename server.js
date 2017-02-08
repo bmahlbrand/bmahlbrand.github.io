@@ -1,3 +1,6 @@
+// use full ES6 everywhere else
+require('babel-register');
+
 const express = require('express');
 const app = express();
 
@@ -7,6 +10,7 @@ const cors = require('cors');
 const path = require('path');
 const fs = require('fs');
 const geoip = require('geoip-lite');
+const db = require('./db');
 
 app.use(cors());
 
@@ -52,6 +56,7 @@ app.get('*projects.json', (req, res) => {
 });
 
 app.get('*posts.json', (req, res) => {
+
 
     const filepath = path.join(__dirname, 'app/js/blog/posts.json');
     const encoding = 'utf8';
@@ -139,6 +144,16 @@ app.get('*', (req, res) => {
 });
 */
 
-app.listen(3001, () => {
-    console.log('Live at Port 3000');
+// Connect to Mongo on start
+db.connect('mongodb://localhost:27017/ahlbrand_blog', (err) => {
+    if (err) {
+        console.log('Unable to connect to Mongo.');
+        process.exit(1);
+    } else {
+        app.listen(3001, () => {
+            console.log('Live at Port 3001');
+        });
+    }
 });
+
+module.exports = {app};
