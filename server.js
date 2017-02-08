@@ -12,7 +12,10 @@ const fs = require('fs');
 const geoip = require('geoip-lite');
 const db = require('./db');
 
+const blogPosts = require('./blogPostRoutes');
+
 app.use(cors());
+app.use(blogPosts);
 
 // app.use(express.static('app'));
 
@@ -55,6 +58,7 @@ app.get('*projects.json', (req, res) => {
     res.json(JSON.parse(file));
 });
 
+/*
 app.get('*posts.json', (req, res) => {
 
     res.json(db.get().collection('posts').find().toArray((err, docs) => {
@@ -67,6 +71,8 @@ app.get('*posts.json', (req, res) => {
 
     // res.json(JSON.parse(file));
 });
+
+*/
 
 app.get('*pix.json', (req, res) => {
 

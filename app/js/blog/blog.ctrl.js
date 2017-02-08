@@ -9,7 +9,7 @@ function BlogController($scope, $http) {
 
         method: 'GET',
 
-        url: 'posts.json'
+        url: 'posts'
 
         // url: 'benjamin.ahlbrand.me:27017/blog/posts'
 
