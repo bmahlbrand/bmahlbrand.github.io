@@ -72,8 +72,8 @@ app.get('*posts.json', (req, res) => {
 
 */
 app.use('*posts', (req, res, next) => {
-    BlogPost.find({}, (err, docs) => {
-        console.log(docs);
+    BlogPost.find({}, (err, posts) => {
+        console.log(posts, err);
     });
     console.log('fire');
 });
