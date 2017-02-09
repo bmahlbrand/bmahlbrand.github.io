@@ -10,7 +10,7 @@
         </div>
         <div class="col-sm-8">
             <h2>{{ projectName }}</h2>
-            <p>{{ projectDescription }} </p>
+            <p ng-repeat="section in projectDescription">{{ section.section }} </p>
             <a href="{{ projectLink }}">git</a>
             <p>
                 General timeline of the work: {{ projectDate }}
