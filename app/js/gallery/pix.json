@@ -17,5 +17,6 @@
 	{ "link": "app/img/bunnysoftshadow.png", "tags": [{"tag": "OpenGL"}, {"tag": "GLSL"}, {"tag": "global illumination"}, {"tag": "many lights"}, {"tag": "deferred rendering"}] },
 	{ "link": "app/img/dragongoroaud.png", "tags": [{"tag": "OpenGL"}, {"tag": "GLSL"}, {"tag": "global illumination"}] },
 	{ "link": "app/img/dragonsketchr.png", "tags": [{"tag": "OpenGL"}, {"tag": "GLSL"}, {"tag": "post processing"}, {"tag": "non-photorealistic rendering"}] },
-	{ "link": "app/img/bunnytoon.png", "tags": [{"tag": "OpenGL"}, {"tag": "GLSL"}, {"tag": "post processing"}, {"tag": "non-photorealistic rendering"}] }
+	{ "link": "app/img/bunnytoon.png", "tags": [{"tag": "OpenGL"}, {"tag": "GLSL"}, {"tag": "post processing"}, {"tag": "non-photorealistic rendering"}] },
+	{ "link": "app/img/rockrender.png", "tags": [{"tag": "ZBrush"}, {"tag": "substance designer"}, {"tag": "environment modelling"}]}
 ]
