@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 const projectSchema = mongoose.Schema({
 
 	title: String,
-	description: String,
+	description: [ {section: String } ],
 	pix: [ { link: String } ],
 	dates: { type: Date, default: Date.now },
 	link: String,
