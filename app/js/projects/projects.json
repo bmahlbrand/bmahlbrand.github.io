@@ -1,6 +1,10 @@
 [{
     "title": "Social Media Analytics and Reporting Toolkit (SMART)",
-    "description": [{"section": "TwitIE Named Entity Recongition system research and evaluation - developed Java API on top of GATE Embedded w/TwitIE for automation of entity extraction in microblog corpora to be integrated into future projects"}, {"section": "Twitter Email Alert Response"}],
+    "description": [{
+        "section": "TwitIE Named Entity Recongition system research and evaluation - developed Java API on top of GATE Embedded w/TwitIE for automation of entity extraction in microblog corpora to be integrated into future projects"
+    }, {
+        "section": "Twitter Email Alert Response"
+    }],
     "tags": [{
         "tag": "javascript"
     }, {
@@ -14,7 +18,11 @@
     "dates": "December 2014 - current"
 }, {
     "title": "PixelTone",
-    "description": "a webapp facilitating the uploading of pictures to be analyzed by Microsoft’s Project Oxford DeepVision API to determine possible emotional indicators of people in the images, coupled with work that extracts a dominant color palette to be considered as input parameters to procedurally generate music fitting the input image’s ‘vibe’ through use of a knowledge base constructed with domain knowledge of harmony and rhythm, coupled with genetic evolutionary algorithms to produce a song in MIDI file format to be returned to the front end view and a displayed score for the user to follow along with. Recognized by Purdue’s Computer Science department as an exceptional project Spring 2016",
+    "description": [{
+        "section": "a webapp facilitating the uploading of pictures to be analyzed by Microsoft’s Project Oxford DeepVision API to determine possible emotional indicators of people in the images, coupled with work that extracts a dominant color palette to be considered as input parameters to procedurally generate music fitting the input image’s ‘vibe’ through use of a knowledge base constructed with domain knowledge of harmony and rhythm, coupled with genetic evolutionary algorithms to produce a song in MIDI file format to be returned to the front end view and a displayed score for the user to follow along with."
+    }, {
+        "section": "Recognized by Purdue’s Computer Science department as an exceptional project Spring 2016"
+    }],
     "tags": [{
         "tag": "machine learning"
     }, {
@@ -27,7 +35,6 @@
 }, {
     "title": "Impromptune",
     "description": "a Java application extending on the feature set of Zong! viewer, while also implementing a dynamic music generation based on the current loaded musical score. We took a static musicXML score viewer and added many features to it while using a Scrum software development methodology.",
-    "contributions": "",
     "tags": [{
         "tag": "machine learning"
     }, {
@@ -61,8 +68,12 @@
     "dates": "June 2015 - July 2015"
 }, {
     "title": "Purdue Cognition & Learning Laboratory",
-    "description": "Description here",
+    "description": {
+        "section": "Description here"
+    },
     "tags": [{
+        "tag": "JavaScript"
+    }, {
         "tag": "NodeJS"
     }, {
         "tag": "PHP"
@@ -75,29 +86,47 @@
     "dates": "June 2015 - April 2015"
 }, {
     "title": "query-by-humming engine",
-    "description": "Information Search and Management final research project in developing a query by humming system to detect hummed melodies and match likely songs",
-    "contributions": "",
-    "tags": "",
-    "link": "",
-    "dates": ""
+    "description": [{
+        "section": "Information Search and Management final research project in developing a query by humming system to detect hummed melodies and match likely songs, using auto correlation, damerau levenshtein, and wuManber edit distance algorithms"
+    }],
+    "tags": [{
+        "tag": "Java"
+    }, {
+        "tag": "MIDI"
+    }, {
+        "tag": ".wav"
+    }, {
+        "tag": "audio processing"
+    }],
+    "link": "https://github.com/bmahlbrand/queryByHumming",
+    "dates": "November - December 2014"
 }, {
     "title": "Fiz / Flip",
-    "description": "an interpreter shell for a simple functional language (in the spirit of LISP) from scratch written in C++ with Flex and Bison",
-    "contributions": "",
-    "tags": "",
+    "description": [{
+        "section": "an interpreter shell for a simple functional language (in the spirit of LISP) from scratch written in C++ with Flex and Bison"
+    }],
+    "tags": [{
+        "tag": "functional programming"
+    }, {
+        "tag": "C++"
+    }, {
+        "tag": "flex / bison parser"
+    }],
     "link": "",
-    "dates": ""
+    "dates": "October 2015"
 }, {
     "title": "Linux Shell",
-    "description": "A robust alternative to bash Unix shell written in C++",
-    "contributions": "",
+    "description": [{
+        "section": "A robust alternative to bash Unix shell written in C++"
+    }],
     "tags": "",
     "link": "",
     "dates": ""
 }, {
     "title": "MyHTTPD",
-    "description": "a web server implemented with threads, thread pooling, and process pooling operating modes written in C/C++ supporting dynamicly loaded libraries",
-    "contributions": "",
+    "description": [{
+        "section": "a web server implemented with threads, thread pooling, and process pooling operating modes written in C/C++ supporting dynamicly loaded libraries"
+    }],
     "tags": "",
     "link": "",
     "dates": "Fall 2015"
@@ -110,29 +139,43 @@
     "dates": "Summer 2014"
 }, {
     "title": "C / C++ networking",
-    "description": "IPv4/IPv6 packet dumper for TCP, UDP, ARP, ICMP packets, multithreaded inflection server, concurrent FTP server, SDN data center simulation / multi-tenant flow restrictions",
-    "contributions": "",
-    "tags": "",
+    "description": [{
+        "section": "IPv4/IPv6 packet dumper for TCP, UDP, ARP, ICMP packets, multithreaded inflection server, concurrent FTP server, SDN data center simulation / multi-tenant flow restrictions"
+    }],
+    "tags": [{
+        "tag": "Python"
+    }, {
+        "tag": "C / C++"
+    }, {
+        "tag": "socket programming"
+    }],
     "link": "",
     "dates": "Spring 2016"
 }, {
     "title": "Software Rasterizer",
-    "description": "Built and extended a software rasterizer from scratch for rendering triangles, ray tracing, clipping, depth masking, texture mapping, model space/screen space interpolation, hard / soft shadows, projective textures, reflections, refractions, depth imposters for reflections",
-    "contributions": "",
-    "tags": "OpenGL",
+    "description": [{
+        "section": "Built and extended a software rasterizer from scratch for rendering triangles, ray tracing, clipping, depth masking, texture mapping, model space/screen space interpolation, hard / soft shadows, projective textures, reflections, refractions, depth imposters for reflections"
+    }],
+    "tags": [{
+        "tag": "OpenGL"
+    }, {
+        "tag": "C++"
+    }],
     "link": "",
-    "dates": ""
+    "dates": "Spring 2016"
 }, {
     "title": "Purdue EPICS (Engineering Projects In Community Service, APPS - TADA)",
-    "description": "TADA (Technology Assisted Dietary Assessment) Android application aims to provide a simple way to track your daily diet, provide recommendations, while researchers working with project advisor Dr. Edward Delp and VIPER lab students gather geo-tagged data and nutritional habits Implemented functionality to allow multiple UPC barcodes, images of meals to be batch processed by server to determine nutritional content for users Implemented a local datastore for client side caching of personal dietary history",
-    "contributions": "",
+    "description": [{
+        "section": "TADA (Technology Assisted Dietary Assessment) Android application aims to provide a simple way to track your daily diet, provide recommendations, while researchers working with project advisor Dr. Edward Delp and VIPER lab students gather geo-tagged data and nutritional habits Implemented functionality to allow multiple UPC barcodes, images of meals to be batch processed by server to determine nutritional content for users Implemented a local datastore for client side caching of personal dietary history"
+    }],
     "tags": "",
     "link": "",
     "dates": ""
 }, {
     "title": "",
-    "description": "Wave spawning FPS Android game built with Unity to learn basics of programming / game development",
-    "contributions": "",
+    "description": [{
+        "section": "Wave spawning FPS Android game built with Unity to learn basics of programming / game development"
+    }],
     "tags": "",
     "link": "",
     "dates": "June 2013 - July 2013"
