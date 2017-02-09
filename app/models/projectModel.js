@@ -6,6 +6,9 @@ const projectSchema = mongoose.Schema({
 	description: String,
 	pix: [ { link: String } ],
 	dates: { type: Date, default: Date.now },
+	link: String,
 	tags: [ { tag: String } ],
 
-}});
+});
+
+module.exports = mongoose.model('Project', projectSchema, 'projects');

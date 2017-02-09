@@ -1,12 +1,21 @@
+// use full ES6 everywhere else
+require('babel-register');
+
 const express = require('express');
 const app = express();
-
-// const router = express.Router();
+const BlogPost = require('./app/models/blogpostModel');
+const Gallery = require('./app/models/galleryModel');
+const Project = require('./app/models/projectModel');
 
 const cors = require('cors');
 const path = require('path');
 const fs = require('fs');
 const geoip = require('geoip-lite');
+const db = require('./db');
+
+const blogPosts = require('./blogPostRoutes');
+const projectsRoutes = require('./projectsRoutes');
+const galleryRoutes = require('./galleryRoutes');
 
 app.use(cors());
 
@@ -29,7 +38,7 @@ app.get('/favicon.ico', (req, res) => {
     res.sendFile(filepath);
 });
 
-app.get('resume', (req, res) => {
+app.get('*resume', (req, res) => {
     const filepath = path.join(__dirname, 'cv_ahlbrand.pdf');
 
     console.log('resume', filepath);
@@ -42,32 +51,56 @@ app.get('*index.js', (req, res) => {
     res.sendFile(filepath);
 });
 
-app.get('*projects.json', (req, res) => {
+// app.get('*projects.json', (req, res) => {
 
-    const filepath = path.join(__dirname, 'app/js/projects/projects.json');
-    const encoding = 'utf8';
-    const file = fs.readFileSync(filepath, encoding);
+//     const filepath = path.join(__dirname, 'app/js/projects/projects.json');
+//     const encoding = 'utf8';
+//     const file = fs.readFileSync(filepath, encoding);
 
-    res.json(JSON.parse(file));
-});
+//     res.json(JSON.parse(file));
+// });
 
+/*
 app.get('*posts.json', (req, res) => {
+
+    res.json(db.get().collection('posts').find().toArray((err, docs) => {
+        console.log(docs);
+    }));
 
     const filepath = path.join(__dirname, 'app/js/blog/posts.json');
     const encoding = 'utf8';
     const file = fs.readFileSync(filepath, encoding);
 
-    res.json(JSON.parse(file));
+    // res.json(JSON.parse(file));
 });
 
-app.get('*pix.json', (req, res) => {
+*/
+app.use(blogPosts);
+app.use(projectsRoutes);
+app.use(galleryRoutes);
 
-    const filepath = path.join(__dirname, 'app/js/gallery/pix.json');
-    const encoding = 'utf8';
-    const file = fs.readFileSync(filepath, encoding);
+// app.use('*pix', (req, res) => {
+//     Gallery.find({}, (err, gallery) => {
+//         if (!err) {
+//             console.log(gallery);
+//             console.log('fire');
+//             res.json(gallery);
+//         } else {
+//             console.log(err);
+//         }
 
-    res.json(JSON.parse(file));
-});
+//     });
+
+// });
+
+// app.get('*pix.json', (req, res) => {
+
+//     const filepath = path.join(__dirname, 'app/js/gallery/pix.json');
+//     const encoding = 'utf8';
+//     const file = fs.readFileSync(filepath, encoding);
+
+//     res.json(JSON.parse(file));
+// });
 
 app.get('*.png', (req, res) => {
     res.sendFile(path.join(__dirname, req.url));
@@ -139,6 +172,16 @@ app.get('*', (req, res) => {
 });
 */
 
-app.listen(3001, () => {
-    console.log('Live at Port 3000');
+// Connect to Mongo on start
+db.connect('mongodb://localhost/blog', (err) => {
+    if (err) {
+        console.log('Unable to connect to Mongo.');
+        process.exit(1);
+    } else {
+        app.listen(3001, () => {
+            console.log('Live at Port 3001');
+        });
+    }
 });
+
+module.exports = {app};

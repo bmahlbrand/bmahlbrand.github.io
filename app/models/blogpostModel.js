@@ -13,4 +13,6 @@ const blogpostSchema = mongoose.Schema({
 	hidden: Boolean,
 	meta: { votes: Number }
 
-}});
+});
+
+module.exports = mongoose.model('BlogPost', blogpostSchema, 'posts');
