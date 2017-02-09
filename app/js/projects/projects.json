@@ -1,7 +1,6 @@
 [{
     "title": "Social Media Analytics and Reporting Toolkit (SMART)",
-    "description": "TwitIE Named Entity Recongition system research and evaluation - developed Java API on top of GATE Embedded w/TwitIE for automation of entity extraction in microblog corpora to be integrated into future projects",
-    "contributions": "Twitter Email Alert Response",
+    "description": [{"section": "TwitIE Named Entity Recongition system research and evaluation - developed Java API on top of GATE Embedded w/TwitIE for automation of entity extraction in microblog corpora to be integrated into future projects"}, {"section": "Twitter Email Alert Response"}],
     "tags": [{
         "tag": "javascript"
     }, {
