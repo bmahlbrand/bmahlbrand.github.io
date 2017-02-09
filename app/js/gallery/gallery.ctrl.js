@@ -60,7 +60,7 @@ function GalleryController($scope, $http, $interval) {
 
     $scope.nextProject = () => {
 
-        if ($scope.currentIndex >= $scope.posts.length) {
+        if ($scope.currentIndex >= $scope.posts.length - 1) {
             $scope.currentIndex = 0;
         } else {
             $scope.currentIndex++;
