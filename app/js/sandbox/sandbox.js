@@ -9,4 +9,4 @@ app.config(($stateProvider) => {
         controllerAs: 'sandbox'
     });
 })
-.controller('ProjectsCtrl', SandboxController);
+.controller('SandboxCtrl', SandboxController);
