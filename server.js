@@ -138,10 +138,12 @@ app.use((req, res, next) => {
 
 });
 
+/*
 app.get('/*', (req, res) => {
     console.log(path.join(__dirname, req.url));
     res.sendFile(path.join(__dirname, 'index.html'));
 });
+*/
 
 // app.use('/', express.static(__dirname + '/js/src/'));
 // app.get('/projects', function(req, res) {
