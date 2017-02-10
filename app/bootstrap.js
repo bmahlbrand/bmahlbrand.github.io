@@ -14,7 +14,7 @@ app.config(['$urlRouterProvider', '$urlMatcherFactoryProvider', '$locationProvid
       // Allow cas-insentitive matching for URLS.
       $urlMatcherFactoryProvider.caseInsensitive(true);
 
-      // $locationProvider.html5Mode(true);
+      $locationProvider.html5Mode(true);
       $compileProvider.debugInfoEnabled(true);
 
       // Catch 404 errors.
