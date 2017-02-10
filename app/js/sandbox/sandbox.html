@@ -101,7 +101,11 @@
         mat4.perspective(45, gl.viewportWidth / gl.viewportHeight, 0.1, 100.0, pMatrix);
         mat4.identity(mvMatrix);
         //Move our triangle
-        mat4.translate(mvMatrix, [0.0, 0.0, -4.0]);
+        var translation = vec3.create();
+        vec3.set(translation, 0, 0, -2.0);
+        mat4.translate(mvMatrix, mvMatrix, translation);
+
+        // mat4.translate(mvMatrix, [0.0, 0.0, -4.0]);
         //Pass triangle position to vertex shader
         gl.bindBuffer(gl.ARRAY_BUFFER, triangleVertexPositionBuffer);
         gl.vertexAttribPointer(shader_prog.positionLocation, triangleVertexPositionBuffer.itemSize, gl.FLOAT, false, 0, 0);
