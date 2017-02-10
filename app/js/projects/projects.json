@@ -4,6 +4,8 @@
         "section": "TwitIE Named Entity Recongition system research and evaluation - developed Java API on top of GATE Embedded w/TwitIE for automation of entity extraction in microblog corpora to be integrated into future projects"
     }, {
         "section": "Twitter Email Alert Response"
+    }, {
+        "section": "Our development team received a Certificate of Merit awarded by the U.S. Coast Guard for the system’s contributions to public service"
     }],
     "tags": [{
         "tag": "javascript"
@@ -34,7 +36,7 @@
     "dates": "January 2016 - May 2016"
 }, {
     "title": "Impromptune",
-    "description": "a Java application extending on the feature set of Zong! viewer, while also implementing a dynamic music generation based on the current loaded musical score. We took a static musicXML score viewer and added many features to it while using a Scrum software development methodology.",
+    "description": [{"section": "a Java application extending on the feature set of Zong! viewer, while also implementing a dynamic music generation based on the current loaded musical score. We took a static musicXML score viewer and added many features to it while using a Scrum software development methodology."}],
     "tags": [{
         "tag": "machine learning"
     }, {
@@ -51,9 +53,9 @@
     }, {
         "section": "Implemented Restful APIs that provides functionality for k-means, KDE and group trajectory clustering, in addition to spatial & temporal filtering / sampling."
     }, {
-        "section": "Explored graph based tweet clustering algorithms based on optimal modularity scores, a greedy random walk of optimal modularity, K cores, and edge betweenness, co-occurrence of words, phrase co - occurrence and semantic role labeling with parse trees to build edges between entities and actions.Topic graph caching for hierarchical term exploration "
+        "section": "Explored graph based tweet clustering algorithms based on optimal modularity scores, a greedy random walk of optimal modularity, K cores, and edge betweenness, co-occurrence of words, phrase co - occurrence and semantic role labeling with parse trees to build edges between entities and actions. Topic graph caching for hierarchical term exploration."        
     }, {
-        "section": "Our team got an honorable mention award based on this work."
+        "section": "We submitted 3 short papers to each of the challenges. Received an Honorable Mention for our paper and accompanying visualization system submitted for the VAST Challenge 2015 - Mini Challenge 2."
     }],
     "tags": [{
         "tag": "machine learning"
@@ -68,9 +70,11 @@
     "dates": "June 2015 - July 2015"
 }, {
     "title": "Purdue Cognition & Learning Laboratory",
-    "description": {
-        "section": "Description here"
-    },
+    "description": [{
+        "section": "worked on a long term project towards a ‘smart’ digital tutor with automated relevance scoring of written responses using QuickScore (developed by collaborators at Indiana University) and adaptive lag adjustment according to user performance, users can upload their own materials, developed new version with a MEAN (MongoDB, Express, Angular, NodeJS) stack, previously built with Play Framework in Java and MySQL"
+    }, {
+        "section": "automated deployment of  web experiments using PHP, MySQL, Javascript (AngularJS / D3js) to allow researchers to use a configuration file to dynamically create highly customized recall/retrieval tasks to collect data through Amazon MTurk without the need for programming experience, later built a MEAN stack to replace the PHP based framework"
+    }],
     "tags": [{
         "tag": "JavaScript"
     }, {
@@ -132,11 +136,15 @@
     "dates": "Fall 2015"
 }, {
     "title": "Oracle FastR",
-    "description": "",
-    "contributions": "",
-    "tags": "",
-    "link": "",
-    "dates": "Summer 2014"
+    "description": "I was involved in an implementation of GNU-R to Oracle FastR, porting C / Fortran to Java to mirror R functionality within Oracle's FastR implementation, which leverages Graal and Truffle to achieve speed improvements over GNU-R. The focus of my work was implementing Oracle FastR language's built-in vector/matrix operations in their database products for optimal performance.",
+    "tags": [{
+        "tag": "Java"
+    }, {
+        "tag": "R"
+    }, {
+        "tag": "data analytics"
+    }],
+    "dates": "April - August 2014"
 }, {
     "title": "C / C++ networking",
     "description": [{
@@ -165,18 +173,16 @@
     "dates": "Spring 2016"
 }, {
     "title": "Purdue EPICS (Engineering Projects In Community Service, APPS - TADA)",
-    "description": [{
-        "section": "TADA (Technology Assisted Dietary Assessment) Android application aims to provide a simple way to track your daily diet, provide recommendations, while researchers working with project advisor Dr. Edward Delp and VIPER lab students gather geo-tagged data and nutritional habits Implemented functionality to allow multiple UPC barcodes, images of meals to be batch processed by server to determine nutritional content for users Implemented a local datastore for client side caching of personal dietary history"
-    }],
-    "tags": "",
-    "link": "",
+    "description": [{"section": "TADA (Technology Assisted Dietary Assessment) Android application aims to provide a simple way to track your daily diet, provide recommendations, while researchers working with project advisor Dr. Edward Delp and VIPER lab students gather geo-tagged data and nutritional habits."}, {"section": "Implemented functionality to allow multiple UPC barcodes, images of meals to be batch processed by server to determine nutritional content for users"},{"section": "Implemented a local datastore for client side caching of personal dietary history."}],
+    "tags": [{"tag": "Android"}, {"tag": "Java"}, {"tag": "geo-location"}],
+    "link": "http://www.tadaproject.org/",
     "dates": ""
 }, {
-    "title": "",
+    "title": "MonkeyMan",
     "description": [{
         "section": "Wave spawning FPS Android game built with Unity to learn basics of programming / game development"
     }],
-    "tags": "",
-    "link": "",
+    "tags": [{"tag": "JavaScript"}, {"tag": "C#"}],
+    "link": "https://github.com/bmahlbrand/monkeyman",
     "dates": "June 2013 - July 2013"
 }]
