@@ -119,24 +119,28 @@
     "link": "",
     "dates": "October 2015"
 }, {
-    "title": "Linux Shell",
+    "title": "Systems Programming / OS projects",
     "description": [{
-        "section": "A robust alternative to bash Unix shell written in C++"
+        "section": "solaris timeshare / round robin process schedulers"
+    }, {
+        "section": "mark and sweep garbage collector for the Xinu operating system"
+    }, {
+        "section": "MyHTTPD: a web server implemented with threads, thread pooling, and process pooling operating modes written in C/C++ supporting dynamicly loaded libraries"
+    }, {
+        "section": "BenShell: A robust alternative to bash Unix shell written in C++"
     }],
-    "tags": "",
-    "link": "",
-    "dates": ""
-}, {
-    "title": "MyHTTPD",
-    "description": [{
-        "section": "a web server implemented with threads, thread pooling, and process pooling operating modes written in C/C++ supporting dynamicly loaded libraries"
+    "tags": [{
+        "tag": "C"
+    }, {
+        "tag": "C++"
+    }, {
+        "tag": "flex / bison parser"
     }],
-    "tags": "",
     "link": "",
-    "dates": "Fall 2015"
+    "dates": "Spring / Fall 2015"
 }, {
     "title": "Oracle FastR",
-    "description": "I was involved in an implementation of GNU-R to Oracle FastR, porting C / Fortran to Java to mirror R functionality within Oracle's FastR implementation, which leverages Graal and Truffle to achieve speed improvements over GNU-R. The focus of my work was implementing Oracle FastR language's built-in vector/matrix operations in their database products for optimal performance.",
+    "description": [{"section": "I was involved in an implementation of GNU-R to Oracle FastR, porting C / Fortran to Java to mirror R functionality within Oracle's FastR implementation, which leverages Graal and Truffle to achieve speed improvements over GNU-R. The focus of my work was implementing Oracle FastR language's built-in vector/matrix operations in their database products for optimal performance."}],
     "tags": [{
         "tag": "Java"
     }, {

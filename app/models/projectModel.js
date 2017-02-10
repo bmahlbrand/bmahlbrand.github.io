@@ -5,7 +5,7 @@ const projectSchema = mongoose.Schema({
 	title: String,
 	description: [ {section: String } ],
 	pix: [ { link: String } ],
-	dates: { type: Date, default: Date.now },
+	dates: String,
 	link: String,
 	tags: [ { tag: String } ],
 
