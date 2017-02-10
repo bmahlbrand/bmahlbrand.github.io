@@ -7,7 +7,7 @@ function ProjectsController($scope, $http) {
     $http({
 
         method: 'GET',
-        url: 'projects'
+        url: '/projects/'
 
     }).then((response) => {
 
