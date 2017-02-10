@@ -100,7 +100,7 @@
     }, {
         "tag": ".wav"
     }, {
-        "tag": "audio processing"
+        "tag": "audio"
     }],
     "link": "https://github.com/bmahlbrand/queryByHumming",
     "dates": "November - December 2014"
@@ -180,7 +180,7 @@
     "description": [{"section": "TADA (Technology Assisted Dietary Assessment) Android application aims to provide a simple way to track your daily diet, provide recommendations, while researchers working with project advisor Dr. Edward Delp and VIPER lab students gather geo-tagged data and nutritional habits."}, {"section": "Implemented functionality to allow multiple UPC barcodes, images of meals to be batch processed by server to determine nutritional content for users"},{"section": "Implemented a local datastore for client side caching of personal dietary history."}],
     "tags": [{"tag": "Android"}, {"tag": "Java"}, {"tag": "geo-location"}],
     "link": "http://www.tadaproject.org/",
-    "dates": ""
+    "dates": "Spring 2014"
 }, {
     "title": "MonkeyMan",
     "description": [{
