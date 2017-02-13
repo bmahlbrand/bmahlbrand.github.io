@@ -5,7 +5,7 @@ export const app = angular.module('ahlbrand', ['ui.router']);
 
 // angular.bootstrap(document.getElementById('ahlbrand'), ['ahlbrand'], {debugInfoEnabled: true});
 
-app.config(['$urlRouterProvider', '$urlMatcherFactoryProvider', '$locationProvider', '$compileProvider', '$stateProvider', 'ngSanitize',
+app.config(['$urlRouterProvider', '$urlMatcherFactoryProvider', '$locationProvider', '$compileProvider', '$stateProvider',
   ($urlRouterProvider, $urlMatcherFactoryProvider, $locationProvider, $compileProvider, $stateProvider) => {
 
       // Allow trailing slashes on URLs.
