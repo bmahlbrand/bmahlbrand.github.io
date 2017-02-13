@@ -17,7 +17,7 @@
 
             <p> {{ currentPost.abstract }}</p>
 
-            <p ng-repeat="section in currentPost.body" ng-bind-html="renderHtml('{{ section.section }}')"> {{ section.section }} </p>
+            <p ng-repeat="section in currentPost.body" ng-bind-html="renderHtml(section.section)"> {{ section.section }} </p>
             <span ng-repeat="tag in currentPost.tags">
                 {{tag.tag}}
             </span>
