@@ -5,7 +5,7 @@
     }, {
         "section": "Twitter Email Alert Response - I implmeneted a geo-filter to allow for multiple polygon entities encoded in shapefiles to allow users to set up real-time email alerts based on matching tweets according to named entity recognition described above"
     }, {
-        "section": "Built a backend RESTful server for constructing a 'Natural Scale Tree' relating census data in a hierarchical manner. This includes parsing shapefiles and constructing a tree of polygon entities in a MongoDB collection to allow for intersection querying"
+        "section": "Built a backend RESTful server for constructing a 'Natural Scale Tree' relating census data in a hierarchical manner. This includes parsing shapefiles and constructing a tree of polygon entities in a MongoDB collection to allow for intersection querying, polygon simplification / offset buffering"
     }, {
         "section": "Implemented downloadable reports of various data points in CSV or JSON format"
     }, {
