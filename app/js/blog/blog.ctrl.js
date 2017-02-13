@@ -1,4 +1,4 @@
-function BlogController($scope, $http, $sce) {
+function BlogController($scope, $http, $sanitize) {
 
     $scope.posts = null;
 
@@ -28,7 +28,7 @@ function BlogController($scope, $http, $sce) {
     });
 
     $scope.renderHtml = function(html) {
-        return $sce.trustAsHtml(html);
+        return $sanitize(html);
     };
 
     $scope.setProject = () => {
