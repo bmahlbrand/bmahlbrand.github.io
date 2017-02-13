@@ -1,4 +1,4 @@
-function BlogController($scope, $http) {
+function BlogController($scope, $http, $sce) {
 
     $scope.posts = null;
 
@@ -26,6 +26,10 @@ function BlogController($scope, $http) {
         console.log(response);
 
     });
+
+    $scope.renderHtml = function(html) {
+        return $sce.trustAsHtml(html);
+    };
 
     $scope.setProject = () => {
 
