@@ -10,6 +10,6 @@ app.config(($stateProvider) => {
     });
 })
 .controller('BlogCtrl', BlogController)
-.filter('unsafe', ($sce) => { 
-	return $sce.trustAsHtml; 
+.filter('unsafe', ($sce) => {
+    return $sce.trustAsHtml;
 });
