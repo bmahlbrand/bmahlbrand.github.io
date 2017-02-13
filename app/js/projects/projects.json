@@ -1,9 +1,13 @@
 [{
     "title": "Social Media Analytics and Reporting Toolkit (SMART)",
     "description": [{
-        "section": "TwitIE Named Entity Recongition system research and evaluation - developed Java API on top of GATE Embedded w/TwitIE for automation of entity extraction in microblog corpora to be integrated into future projects"
+        "section": "TwitIE Named Entity Recongition system research and evaluation - developed Java API on top of GATE Embedded w/TwitIE for automation of entity extraction in microblog corpora"
     }, {
-        "section": "Twitter Email Alert Response"
+        "section": "Twitter Email Alert Response - I implmeneted a geo-filter to allow for multiple polygon entities encoded in shapefiles to allow users to set up real-time email alerts based on matching tweets according to named entity recognition described above"
+    }, {
+        "section": "Built a backend RESTful server for constructing a 'Natural Scale Tree' relating census data in a hierarchical manner. This includes parsing shapefiles and constructing a tree of polygon entities in a MongoDB collection to allow for intersection querying"
+    }, {
+        "section": "Implemented downloadable reports of various data points in CSV or JSON format"
     }, {
         "section": "Our development team received a Certificate of Merit awarded by the U.S. Coast Guard for the system’s contributions to public service"
     }],
@@ -21,7 +25,7 @@
 }, {
     "title": "PixelTone",
     "description": [{
-        "section": "a webapp facilitating the uploading of pictures to be analyzed by Microsoft’s Project Oxford DeepVision API to determine possible emotional indicators of people in the images, coupled with work that extracts a dominant color palette to be considered as input parameters to procedurally generate music fitting the input image’s ‘vibe’ through use of a knowledge base constructed with domain knowledge of harmony and rhythm, coupled with genetic evolutionary algorithms to produce a song in MIDI file format to be returned to the front end view and a displayed score for the user to follow along with."
+        "section": "PixelTone is a webapp facilitating the uploading of pictures to be analyzed by Microsoft’s Project Oxford DeepVision API to determine possible emotional indicators of people in the images, coupled with work that extracts a dominant color palette to be considered as input parameters to procedurally generate music fitting the input image’s ‘vibe’ through use of a knowledge base constructed with domain knowledge of harmony and rhythm, coupled with genetic evolutionary algorithms to produce a song in MIDI file format to be returned to the front end view and a displayed score for the user to follow along with."
     }, {
         "section": "Recognized by Purdue’s Computer Science department as an exceptional project Spring 2016"
     }],
@@ -36,7 +40,11 @@
     "dates": "January 2016 - May 2016"
 }, {
     "title": "Impromptune",
-    "description": [{"section": "a Java application extending on the feature set of Zong! viewer, while also implementing a dynamic music generation based on the current loaded musical score. We took a static musicXML score viewer and added many features to it while using a Scrum software development methodology."}],
+    "description": [{
+        "section": "a Java application extending on the feature set of Zong! viewer, while also implementing a dynamic music generation based on the current loaded musical score. We took a static musicXML score viewer and added many features to it while using a Scrum software development methodology."
+    },{
+        "section": "My contributions were mainly an underlying API coupling the Zong API and handling MusicXML input (as the Zong! API isn't complete), and using Hidden Markov Models coupled with some boosting techniques to generate interesting music with multiple voices / instruments via JFugue (a Java based MIDI library)"
+    }],
     "tags": [{
         "tag": "machine learning"
     }, {
@@ -49,7 +57,7 @@
 }, {
     "title": "VAST Challenge 2015",
     "description": [{
-        "section": "Led the back end server development team. Utilized Apache Solr for fast indexing and retrieving large scale trajectory and network data.Established a python based data server that allows the client to query Solr system using Restful API "
+        "section": "Led the back end server development team. Utilized Apache Solr for fast indexing and retrieving large scale trajectory and network data.Established a python based data server that allows the client to query Solr system using a Python Bottle RESTful API "
     }, {
         "section": "Implemented Restful APIs that provides functionality for k-means, KDE and group trajectory clustering, in addition to spatial & temporal filtering / sampling."
     }, {
