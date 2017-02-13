@@ -9,4 +9,7 @@ app.config(($stateProvider) => {
         controllerAs: 'blog'
     });
 })
-.controller('BlogCtrl', BlogController);
+.controller('BlogCtrl', BlogController)
+.filter('unsafe', ($sce) => { 
+	return $sce.trustAsHtml; 
+});
