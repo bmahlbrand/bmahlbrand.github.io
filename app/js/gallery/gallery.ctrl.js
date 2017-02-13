@@ -11,7 +11,7 @@ function GalleryController($scope, $http, $interval) {
 
         method: 'GET',
 
-        url: 'pix'
+        url: '/data/pix/'
 
         // url: 'benjamin.ahlbrand.me:27017/blog/posts'
 
