@@ -107,6 +107,21 @@
         "tag": "Blueprints"
     }]
 }, {
+    "title": "VR Warp Menu Maze w/AI and physics actors demo",
+    "description": [{
+        "section": ""
+    },{
+        "section": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/QeXl3zZf3Ow\" frameborder=\"0\" allowfullscreen></iframe>"
+    }],
+    "tags": [{
+        "tag": "Unreal Engine"
+    },{
+        "tag": "blueprints"
+    },{
+        "tag": "procedural generation"
+    }]
+}, 
+{
     "title": "query-by-humming engine",
     "description": [{
         "section": "Information Search and Management final research project in developing a query by humming system to detect hummed melodies and match likely songs, using auto correlation, damerau levenshtein, and wuManber edit distance algorithms"
