@@ -99,25 +99,35 @@
 }, {
     "title": "VR Asteroids Gaze",
     "description": [{
+        "section": "I built this in a few hours for a VR experience similar to the class Asteroids game - sans player thrusters, as the issues with motion sickness would be pretty excaberated in a 3D free fall situation like that."
+    }, {
         "section": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/y9FCDd72vFQ\" frameborder=\"0\" allowfullscreen></iframe>"
     }],
     "tags": [{
+        "tag": "Occulus Rift"
+    }, {
         "tag": "Unreal Engine"
+    }, {
+        "tag": "WebVR"
     }, {
         "tag": "Blueprints"
     }]
 }, {
     "title": "VR Warp Menu Maze w/AI and physics actors demo",
     "description": [{
-        "section": ""
-    },{
+        "section": "I built this riffing on standard assets available with Unreal Engine in order to procedurally generate a shooting gallery tower by means of blueprints"
+    }, {
         "section": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/QeXl3zZf3Ow\" frameborder=\"0\" allowfullscreen></iframe>"
     }],
     "tags": [{
+        "tag": "Occulus Rift"
+    }, {
         "tag": "Unreal Engine"
-    },{
+    }, {
+        "tag": "WebVR"
+    }, {
         "tag": "blueprints"
-    },{
+    }, {
         "tag": "procedural generation"
     }]
 }, 
