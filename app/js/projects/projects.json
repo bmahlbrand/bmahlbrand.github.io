@@ -97,6 +97,16 @@
     "link": "http://learninglab.psych.purdue.edu/",
     "dates": "June 2015 - April 2015"
 }, {
+    "title": "VR Asteroids Gaze",
+    "description": [{
+        "section": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/y9FCDd72vFQ\" frameborder=\"0\" allowfullscreen></iframe>"
+    }],
+    "tags": [{
+        "tag": "Unreal Engine"
+    }, {
+        "tag": "Blueprints"
+    }]
+}, {
     "title": "query-by-humming engine",
     "description": [{
         "section": "Information Search and Management final research project in developing a query by humming system to detect hummed melodies and match likely songs, using auto correlation, damerau levenshtein, and wuManber edit distance algorithms"
