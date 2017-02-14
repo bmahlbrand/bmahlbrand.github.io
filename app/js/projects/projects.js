@@ -9,4 +9,7 @@ app.config(($stateProvider) => {
         controllerAs: 'projects'
     });
 })
-.controller('ProjectsCtrl', ProjectsController);
+.controller('ProjectsCtrl', ProjectsController)
+.filter('unsafe', ($sce) => {
+    return $sce.trustAsHtml;
+});
