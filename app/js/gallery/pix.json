@@ -18,5 +18,13 @@
 	{ "link": "app/img/dragongoroaud.png", "tags": [{"tag": "OpenGL"}, {"tag": "GLSL"}, {"tag": "global illumination"}] },
 	{ "link": "app/img/dragonsketchr.png", "tags": [{"tag": "OpenGL"}, {"tag": "GLSL"}, {"tag": "post processing"}, {"tag": "non-photorealistic rendering"}] },
 	{ "link": "app/img/bunnytoon.png", "tags": [{"tag": "OpenGL"}, {"tag": "GLSL"}, {"tag": "post processing"}, {"tag": "non-photorealistic rendering"}] },
-	{ "link": "app/img/rockrender.png", "tags": [{"tag": "ZBrush"}, {"tag": "substance designer"}, {"tag": "environment modelling"}]}
+	{ "link": "app/img/reaction_diffusion.PNG", "tags": [{"tag": "reaction diffusion"}, {"tag": "navier stokes"}]},
+	{ "link": "app/img/dragon_nebula.png", "tags": [{"tag": "global illumination"}, {"tag": "physically based lighting"}, {"tag": "billboards"}]},
+	{ "link": "app/img/sketchy_mannequin.PNG", "tags": [{"tag": "ZBrush"}, {"tag": "substance designer"}, {"tag": "environment modelling"}]},
+	{ "link": "app/img/voronoi1Dheightmap.PNG", "tags":  [{"tag": "worley noise"}, {"tag": "height map"}, {"tag": "procedural generation"}]},
+	{ "link": "app/img/worldmap.png", "tags":  [{"tag": "perlin noise"}, {"tag": "height map"}, {"tag": "procedural generation"}]},
+	{ "link": "app/img/worldmap2.png", "tags": [{"tag": "perlin noise"}, {"tag": "height map"}, {"tag": "procedural generation"}]},
+	{ "link": "app/img/worldmap3.png", "tags": [{"tag": "perlin noise"}, {"tag": "height map"}, {"tag": "procedural generation"}]},
+	{ "link": "app/img/warpedPerlinOctaves.png", "tags": [{"tag": "perlin noise"}, {"tag": "domain warping"}, {"tag": "procedural generation"}]},
+	{ "link": "app/img/rivermap.png", "tags": [{"tag": "diffusion limited aggregation"}, {"tag": "procedural generation"}]}
 ]
