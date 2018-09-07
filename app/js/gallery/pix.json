@@ -20,7 +20,16 @@
 	{ "link": "app/img/bunnytoon.png", "tags": [{"tag": "OpenGL"}, {"tag": "GLSL"}, {"tag": "post processing"}, {"tag": "non-photorealistic rendering"}] },
 	{ "link": "app/img/reaction_diffusion.PNG", "tags": [{"tag": "reaction diffusion"}, {"tag": "navier stokes"}]},
 	{ "link": "app/img/dragon_nebula.png", "tags": [{"tag": "global illumination"}, {"tag": "physically based lighting"}, {"tag": "billboards"}]},
-	{ "link": "app/img/sketchy_mannequin.PNG", "tags": [{"tag": "ZBrush"}, {"tag": "substance designer"}, {"tag": "environment modelling"}]},
+	{ "link": "app/img/rockrender.png", "tags": [{"tag": "ZBrush"}, {"tag": "substance designer"}, {"tag": "environment modelling"}]},
+	
+	{ "link": "app/img/simplex_trippiness.jpg", "tags": [{"tag": "procedural generation"}, {"tag": "simplex"}]},
+	{ "link": "app/img/simplex_cell_from_hell2.png", "tags": [{"tag": "procedural generation"}, {"tag": "simplex"}]},
+	{ "link": "app/img/simplex_cell_from_hell.jpg", "tags": [{"tag": "procedural generation"}, {"tag": "simplex"}]},
+	{ "link": "app/img/simplex_capsulesjpg.jpg", "tags": [{"tag": "procedural generation"}, {"tag": "simplex"}]},
+	
+	{ "link": "app/img/sketchy_mannequin.PNG", "tags":  [{"tag": "animation"}, {"tag": "forward kinematics"}]},
+	{ "link": "app/img/sketchy_minotaur.PNG", "tags":  [{"tag": "animation"}, {"tag": "forward kinematics"}]},
+	
 	{ "link": "app/img/voronoi1Dheightmap.PNG", "tags":  [{"tag": "worley noise"}, {"tag": "height map"}, {"tag": "procedural generation"}]},
 	{ "link": "app/img/worldmap.png", "tags":  [{"tag": "perlin noise"}, {"tag": "height map"}, {"tag": "procedural generation"}]},
 	{ "link": "app/img/worldmap2.png", "tags": [{"tag": "perlin noise"}, {"tag": "height map"}, {"tag": "procedural generation"}]},
