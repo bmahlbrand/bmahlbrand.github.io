@@ -23,6 +23,7 @@ echo "[Install]" >> /etc/systemd/system/mongodb.service
 echo "WantedBy=multi-user.target" >> /etc/systemd/system/mongodb.service
 
 # sudo systemctl unmask mongodb
+sudo systemctl daemon-reload
 sudo systemctl start mongodb
 sudo systemctl status mongodb
 sudo systemctl enable mongodb
