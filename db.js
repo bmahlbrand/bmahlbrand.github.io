@@ -10,7 +10,7 @@ module.exports.connect = (url, done) => {
         return done();
     }
 
-    mongoose.connect(url, (err, db) => {
+    mongoose.connect(url, { useMongoClient: true }, (err, db) => {
         if (err) {
             return done(err);
         }
