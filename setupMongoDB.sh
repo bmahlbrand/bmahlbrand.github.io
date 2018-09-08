@@ -17,7 +17,7 @@ echo "After=network.target" >> /etc/systemd/system/mongodb.service
 
 echo "[Service]">> /etc/systemd/system/mongodb.service
 echo "User=mongodb" >> /etc/systemd/system/mongodb.service
-echo "ExecStart=/usr/bin/mongod --quiet --config /etc/mongod.conf">> /etc/systemd/system/mongodb.service
+echo "ExecStart=/usr/bin/mongod --quiet --config /etc/mongodb.conf">> /etc/systemd/system/mongodb.service
 
 echo "[Install]" >> /etc/systemd/system/mongodb.service
 echo "WantedBy=multi-user.target" >> /etc/systemd/system/mongodb.service
