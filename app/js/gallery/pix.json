@@ -36,7 +36,7 @@
 	{ "link": "app/img/worldmap3.png", "tags": [{"tag": "perlin noise"}, {"tag": "height map"}, {"tag": "procedural generation"}]},
 	{ "link": "app/img/warpedPerlinOctaves.png", "tags": [{"tag": "perlin noise"}, {"tag": "domain warping"}, {"tag": "procedural generation"}]},
 	{ "link": "app/img/rivermap.png", "tags": [{"tag": "diffusion limited aggregation"}, {"tag": "procedural generation"}]},
-	{ "link": "app/img/Figure_1.png", "tags": [{"tag": "diffusion limited aggregation"}, {"tag": "procedural generation"}]},
+	{ "link": "app/img/Figure_1.png", "tags": [{"tag": "procedural generation"}]},
 	{ "link": "app/img/image1.png", "tags": [{"tag": "voxelization"}, {"tag": "software rasterizer"}]},
 	{ "link": "app/img/noisegraph1.PNG", "tags": [{"tag": "procedural generation"}]},
 	{ "link": "app/img/noisegraph1_results.PNG", "tags": [{"tag": "procedural generation"}]},
@@ -46,7 +46,7 @@
 	{ "link": "app/img/unknown.png", "tags": [{"tag": "procedural generation"}]},
 	{ "link": "app/img/warpedPerlinTurbulence.png", "tags": [{"tag": "procedural generation"}]},
 	{ "link": "app/img/warpedSimplexTurbulence.png", "tags": [{"tag": "procedural generation"}]},
-	{ "link": "app/img/warpedSimplexTurbulentDetail.PNG", "tags": [{"tag": "procedural generation"}]},
+	{ "link": "app/img/warpedSimplexTurbulentDetail.png", "tags": [{"tag": "procedural generation"}]},
 	{ "link": "app/img/warped_simplex_mul_turb_perlin.PNG", "tags": [{"tag": "procedural generation"}]},
 	{ "link": "app/img/Capture14.PNG", "tags": [{"tag": "OpenGL"}, {"tag": "GLSL"}, {"tag": "post processing"}, {"tag": "non-photorealistic rendering"}]}
 
