@@ -27,13 +27,27 @@
 	{ "link": "app/img/simplex_cell_from_hell.jpg", "tags": [{"tag": "procedural generation"}, {"tag": "texture synthesis"}, {"tag": "simplex"}]},
 	{ "link": "app/img/simplex_capsulesjpg.jpg", "tags": [{"tag": "procedural generation"}, {"tag": "texture synthesis"}, {"tag": "simplex"}]},
 	
-	{ "link": "app/img/sketchy_mannequin.PNG", "tags":  [{"tag": "animation"}, {"tag": "forward kinematics"}]},
-	{ "link": "app/img/sketchy_minotaur.PNG", "tags":  [{"tag": "animation"}, {"tag": "forward kinematics"}]},
+	{ "link": "app/img/sketchy_mannequin.PNG", "tags":  [{"tag": "animation"}, {"tag": "forward kinematics"}, {"tag": "linear blend skinning"}]},
+	{ "link": "app/img/sketchy_minotaur.PNG", "tags":  [{"tag": "animation"}, {"tag": "forward kinematics"}, {"tag": "linear blend skinning"}]},
 	
 	{ "link": "app/img/voronoi1Dheightmap.PNG", "tags":  [{"tag": "worley noise"}, {"tag": "height map"}, {"tag": "procedural generation"}]},
 	{ "link": "app/img/worldmap.png", "tags":  [{"tag": "perlin noise"}, {"tag": "height map"}, {"tag": "procedural generation"}]},
 	{ "link": "app/img/worldmap2.png", "tags": [{"tag": "perlin noise"}, {"tag": "height map"}, {"tag": "procedural generation"}]},
 	{ "link": "app/img/worldmap3.png", "tags": [{"tag": "perlin noise"}, {"tag": "height map"}, {"tag": "procedural generation"}]},
 	{ "link": "app/img/warpedPerlinOctaves.png", "tags": [{"tag": "perlin noise"}, {"tag": "domain warping"}, {"tag": "procedural generation"}]},
-	{ "link": "app/img/rivermap.png", "tags": [{"tag": "diffusion limited aggregation"}, {"tag": "procedural generation"}]}
+	{ "link": "app/img/rivermap.png", "tags": [{"tag": "diffusion limited aggregation"}, {"tag": "procedural generation"}]},
+	{ "link": "app/img/Figure_1.png", "tags": [{"tag": "diffusion limited aggregation"}, {"tag": "procedural generation"}]},
+	{ "link": "app/img/image1.png", "tags": [{"tag": "voxelization"}, {"tag": "software rasterizer"}]},
+	{ "link": "app/img/noisegraph1.PNG", "tags": [{"tag": "procedural generation"}]},
+	{ "link": "app/img/noisegraph1_results.PNG", "tags": [{"tag": "procedural generation"}]},
+	{ "link": "app/img/perlinTurbulence_gradient_mask.PNG", "tags": [{"tag": "procedural generation"}]},
+	{ "link": "app/img/perlinTurbulence_gradient_mask_2.PNG", "tags": [{"tag": "procedural generation"}]},
+	{ "link": "app/img/random_walk_1.png", "tags": [{"tag": "procedural generation"}]},
+	{ "link": "app/img/unknown.png", "tags": [{"tag": "procedural generation"}]},
+	{ "link": "app/img/warpedPerlinTurbulence.png", "tags": [{"tag": "procedural generation"}]},
+	{ "link": "app/img/warpedSimplexTurbulence.png", "tags": [{"tag": "procedural generation"}]},
+	{ "link": "app/img/warpedSimplexTurbulentDetail.png", "tags": [{"tag": "procedural generation"}]},
+	{ "link": "app/img/warped_simplex_mul_turb_perlin.PNG", "tags": [{"tag": "procedural generation"}]},
+	{ "link": "app/img/Capture14.PNG", "tags": [{"tag": "OpenGL"}, {"tag": "GLSL"}, {"tag": "post processing"}, {"tag": "non-photorealistic rendering"}]}
+
 ]
