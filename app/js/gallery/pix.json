@@ -46,7 +46,7 @@
 	{ "link": "app/img/unknown.png", "tags": [{"tag": "procedural generation"}]},
 	{ "link": "app/img/warpedPerlinTurbulence.png", "tags": [{"tag": "procedural generation"}]},
 	{ "link": "app/img/warpedSimplexTurbulence.png", "tags": [{"tag": "procedural generation"}]},
-	{ "link": "app/img/warpedSimplexTurbulentDetail.png", "tags": [{"tag": "procedural generation"}]},
+	{ "link": "app/img/warpedSimplexTurbulentDetail.PNG", "tags": [{"tag": "procedural generation"}]},
 	{ "link": "app/img/warped_simplex_mul_turb_perlin.PNG", "tags": [{"tag": "procedural generation"}]},
 	{ "link": "app/img/Capture14.PNG", "tags": [{"tag": "OpenGL"}, {"tag": "GLSL"}, {"tag": "post processing"}, {"tag": "non-photorealistic rendering"}]}
 
