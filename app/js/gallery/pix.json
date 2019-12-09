@@ -1,5 +1,4 @@
 [
-	{ "link": "app/img/capture.png", "tags": [{"tag": "procedural generation"}, {"tag": "maze"}] }, 
 	{ "link": "app/img/capture2.png", "tags": [{"tag": "procedural generation"}, {"tag": "maze"}] }, 
 	{ "link": "app/img/capture3.png", "tags": [{"tag": "procedural generation"}, {"tag": "unreal engine"}]  }, 
 	{ "link": "app/img/capture4.png", "tags": [{"tag": "procedural generation"}, {"tag": "unreal engine"}]  }, 
