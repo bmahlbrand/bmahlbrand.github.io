@@ -1,7 +1,7 @@
 [
-	{ "link": "app/img/capture2.png", "tags": [{"tag": "procedural generation"}, {"tag": "maze"}] }, 
-	{ "link": "app/img/capture3.png", "tags": [{"tag": "procedural generation"}, {"tag": "unreal engine"}]  }, 
-	{ "link": "app/img/capture4.png", "tags": [{"tag": "procedural generation"}, {"tag": "unreal engine"}]  }, 
+	{ "link": "app/img/Capture2.png", "tags": [{"tag": "procedural generation"}, {"tag": "maze"}] }, 
+	{ "link": "app/img/Capture3.png", "tags": [{"tag": "procedural generation"}, {"tag": "unreal engine"}]  }, 
+	{ "link": "app/img/Capture4.png", "tags": [{"tag": "procedural generation"}, {"tag": "unreal engine"}]  }, 
 	{ "link": "app/img/daily_screen_grab.png", "tags": [{"tag": "substance designer"}, {"tag": "environment texture"}] },
 	{ "link": "app/img/skyisle3.blend.png", "tags": [{"tag": "blender"}, {"tag": "environment modeling"}] },
 	{ "link": "app/img/skyisle4.blend.png", "tags": [{"tag": "blender"}, {"tag": "environment modeling"}] },
@@ -26,8 +26,10 @@
 	{ "link": "app/img/simplex_trippiness.jpg", "tags": [{"tag": "procedural generation"}, {"tag": "texture synthesis"}, {"tag": "simplex"}]},
 	{ "link": "app/img/simplex_cell_from_hell2.jpg", "tags": [{"tag": "procedural generation"}, {"tag": "texture synthesis"}, {"tag": "simplex"}]},
 	{ "link": "app/img/simplex_cell_from_hell.jpg", "tags": [{"tag": "procedural generation"}, {"tag": "texture synthesis"}, {"tag": "simplex"}]},
-	{ "link": "app/img/simplex_capsulesjpg.jpg", "tags": [{"tag": "procedural generation"}, {"tag": "texture synthesis"}, {"tag": "simplex"}]},
+	{ "link": "app/img/simplex_capsules.jpg", "tags": [{"tag": "procedural generation"}, {"tag": "texture synthesis"}, {"tag": "simplex"}]},
 	
+	{ "link": "app/img/CachedImage_1920_1080_POS0.jpg", "tags": [{"tag": "procedural generation"}, {"tag": "texture synthesis"}, {"tag": "voronoi"}]},
+
 	{ "link": "app/img/sketchy_mannequin.PNG", "tags":  [{"tag": "animation"}, {"tag": "forward kinematics"}, {"tag": "linear blend skinning"}]},
 	{ "link": "app/img/sketchy_minotaur.PNG", "tags":  [{"tag": "animation"}, {"tag": "forward kinematics"}, {"tag": "linear blend skinning"}]},
 	
