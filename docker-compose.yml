@@ -9,7 +9,7 @@ services:
       context: .
       dockerfile: Dockerfile
     ports:
-      - "3001:80"
+      - "80:3001"
   mongodb:
     image: mongo
     volumes:
