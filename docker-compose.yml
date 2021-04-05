@@ -36,5 +36,3 @@ services:
     volumes:
       - ./:/usr/src/app
     command: bash -c 'mongo --host "mongodb" blog --eval "db.projects.drop()" && mongoimport --host "mongodb" -d blog -c projects --file /usr/src/app/app/js/projects/projects.json --jsonArray && mongo --host "mongodb" blog --eval "db.posts.drop()" && mongoimport  --host "mongodb" -d blog -c posts --file /usr/src/app/app/js/blog/posts.json --jsonArray && mongo --host "mongodb" blog --eval "db.gallery.drop()" && mongoimport  --host "mongodb" -d blog -c gallery --file /usr/src/app/app/js/gallery/pix.json --jsonArray'
-      # ['mongo blog --eval "db.projects.drop()" && mongoimport -d blog -c projects --file /usr/src/app/app/js/projects/projects.json --jsonArray && mongo blog --eval "db.posts.drop()" && mongoimport -d blog -c posts --file /usr/src/app/app/js/posts/posts.json --jsonArray && mongo blog --eval "db.gallery.drop()" && mongoimport -d blog -c gallery --file /usr/src/app/app/js/gallery/pix.json --jsonArray']
-      
