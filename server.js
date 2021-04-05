@@ -111,6 +111,10 @@ app.get('*.jpg', (req, res) => {
     res.sendFile(path.join(__dirname, req.url));
 });
 
+app.get('*.mp4', (req, res) => {
+    res.sendFile(path.join(__dirname, req.url));
+});
+
 /*
 app.get('*.js', (req, res) => {
     console.log(path.join(__dirname, req.url));
