@@ -26,6 +26,7 @@ app.use(cors());
 // app.use(express.static(path.join(__dirname, '..')));
 
 app.use(express.static('./dist'));
+app.use(express.static('./static'));
 
 app.get('/*.css', (req, res) => {
     const filepath = path.join(__dirname, 'app/', req.url);
