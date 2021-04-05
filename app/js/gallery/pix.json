@@ -3,15 +3,16 @@
 	{ "link": "app/img/maze3.png", "tags": [{"tag": "procedural generation"}, {"tag": "unreal engine"}]  }, 
 	{ "link": "app/img/maze4.png", "tags": [{"tag": "procedural generation"}, {"tag": "unreal engine"}]  }, 
 	{ "link": "app/img/daily_screen_grab.png", "tags": [{"tag": "substance designer"}, {"tag": "environment texture"}] },
-	{ "link": "app/img/skyisle3.blend.png", "tags": [{"tag": "blender"}, {"tag": "environment modeling"}] },
+
+	{ "link": "app/img/skyisle3.blend.png", "tags": [{"tag": "blender"}, {"tag": "environment modeling"}, {"tag": "voronoi"}] },
+	{ "link": "app/img/skyisle4.blend.png", "tags": [{"tag": "blender"}, {"tag": "environment modeling"}] },
+	{ "link": "app/img/skyisle.blend.png", "tags": [{"tag": "blender"}, {"tag": "environment modeling"}] },
 
 	{ "link": "app/img/cubebot.png", "tags": [{"tag": "unreal engine"}, {"tag": "procedural modeling"}, {"tag": "c++"}, {"tag": "procedural rigging"}, {"tag": "parametric surfaces"}] },
 	{ "link": "app/img/volumetric_overseer.png", "tags": [ {"tag": "procedural modeling"}, {"tag": "c++"}, {"tag": "volumetric"}, {"tag": "implicit surfaces"}] },
 	{ "link": "app/img/volumetric_techno_flower.png", "tags": [ {"tag": "procedural modeling"}, {"tag": "c++"}, {"tag": "volumetric"}, {"tag": "implicit surfaces"}] },
 	{ "link": "app/img/volumetric_repetition.png", "tags": [ {"tag": "procedural modeling"}, {"tag": "c++"}, {"tag": "volumetric"}, {"tag": "implicit surfaces"}] },
 
-	{ "link": "app/img/skyisle4.blend.png", "tags": [{"tag": "blender"}, {"tag": "environment modeling"}] },
-	{ "link": "app/img/skyisle.blend.png", "tags": [{"tag": "blender"}, {"tag": "environment modeling"}] },
 	{ "link": "app/img/corridor1.png", "tags": [{"tag": "unreal engine"}, {"tag": "environment modeling"}, {"tag": "environment texture"}, {"tag": "substance designer"}] },
 	{ "link": "app/img/corridor2.png", "tags": [{"tag": "unreal engine"}, {"tag": "environment modeling"}, {"tag": "environment texture"}, {"tag": "substance designer"}] },
 	{ "link": "app/img/corridor3.png", "tags": [{"tag": "unreal engine"}, {"tag": "environment modeling"}, {"tag": "environment texture"}, {"tag": "substance designer"}] },
