@@ -1,3 +1,11 @@
+#!/usr/bin/env bash
+
+# mongod
+
+# sleep 10
+
+cd /usr/src/app/
+
 mongo blog --eval "db.projects.drop()"
 mongoimport -d blog -c projects --file app/js/projects/projects.json --jsonArray
 

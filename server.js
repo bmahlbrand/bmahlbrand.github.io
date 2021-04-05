@@ -173,7 +173,7 @@ app.get('*', (req, res) => {
 */
 
 // Connect to Mongo on start
-db.connect('mongodb://localhost/blog', (err) => {
+db.connect('mongodb://mongodb:27017/blog', (err) => {
     if (err) {
         console.log('Unable to connect to Mongo.');
         process.exit(1);
