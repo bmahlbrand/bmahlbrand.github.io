@@ -3,9 +3,9 @@ require('babel-register');
 
 const express = require('express');
 const app = express();
-const BlogPost = require('./app/models/blogpostModel');
-const Gallery = require('./app/models/galleryModel');
-const Project = require('./app/models/projectModel');
+// const BlogPost = require('./app/models/blogpostModel');
+// const Gallery = require('./app/models/galleryModel');
+// const Project = require('./app/models/projectModel');
 
 const cors = require('cors');
 const path = require('path');
