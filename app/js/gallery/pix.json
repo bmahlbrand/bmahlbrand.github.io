@@ -12,6 +12,7 @@
 	{ "link": "app/img/volumetric_overseer.png", "tags": [ {"tag": "procedural modeling"}, {"tag": "c++"}, {"tag": "volumetric"}, {"tag": "implicit surfaces"}] },
 	{ "link": "app/img/volumetric_techno_flower.png", "tags": [ {"tag": "procedural modeling"}, {"tag": "c++"}, {"tag": "volumetric"}, {"tag": "implicit surfaces"}] },
 	{ "link": "app/img/volumetric_repetition.png", "tags": [ {"tag": "procedural modeling"}, {"tag": "c++"}, {"tag": "volumetric"}, {"tag": "implicit surfaces"}] },
+	{ "link": "app/img/proc_frog.png", "tags": [ {"tag": "procedural modeling"}, {"tag": "c++"}, {"tag": "volumetric"}, {"tag": "implicit surfaces"}, {"tag": "marching tetrahedra"}] },
 
 	{ "link": "app/img/corridor1.png", "tags": [{"tag": "unreal engine"}, {"tag": "environment modeling"}, {"tag": "environment texture"}, {"tag": "substance designer"}] },
 	{ "link": "app/img/corridor2.png", "tags": [{"tag": "unreal engine"}, {"tag": "environment modeling"}, {"tag": "environment texture"}, {"tag": "substance designer"}] },
