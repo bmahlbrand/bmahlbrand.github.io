@@ -40,7 +40,7 @@
     "del": "^2.2.2",
     "babel-register": "6.22.0",
     "angular-ui-router": "^0.4.2",
-    "angular": "~1.4.7",
+    "angular": "~1.8.3",
     "angular-route": "~1.4.7",
     "jquery": "~2.1.4",
     "bootstrap": "~3.3.5",
