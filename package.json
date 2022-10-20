@@ -32,7 +32,7 @@
   "devDependencies": {
     "gl-matrix": "^2.3.2",
     "cors": "^2.8.1",
-    "mongoose": "^4.8.1",
+    "mongoose": "^4.13.21",
     "d3": "^3.5",
     "d3-cloud": "^1.2.4",
     "geoip-lite": "^1.1.9",
