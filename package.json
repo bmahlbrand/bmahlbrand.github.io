@@ -52,7 +52,7 @@
     "browserify": "^12.0.1",
     "browserify-shim": "^3.8.11",
     "event-stream": "^3.3.2",
-    "express": "^4.13.3",
+    "express": "^4.17.3",
     "forever-monitor": "^1.7.0",
     "glob": "^6.0.4",
     "gulp": "^3.9.0",
